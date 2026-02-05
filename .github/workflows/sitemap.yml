@@ -20,7 +20,7 @@ jobs:
     - name: Generate the sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://patiocoverkaty.com/
+        base-url-path: https://www.patiocoverkaty.net/
 
     - name: Commit and push sitemap
       run: |

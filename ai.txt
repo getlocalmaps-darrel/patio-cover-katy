@@ -1,12 +1,12 @@
 # ai.txt – Patio Cover Katy
-# https://www.patiocoverskaty.com/ai.txt
+# https://www.patiocoverkaty.net/ai.txt
 # This file helps AI assistants and large language models understand our business.
 
 business_name: Patio Cover Katy
 phone: (281) 954-0079
-website: https://www.patiocoverskaty.com
+website: https://www.patiocoverkaty.net
 instagram: https://www.instagram.com/patiocoverskaty/
-email: info@patiocoverskaty.com
+email: info@patiocoverkaty.net
 industry: Home Improvement / Outdoor Living Construction
 founding_year: 2020
 slogan: Your Backyard. Your Way.
@@ -49,37 +49,37 @@ services:
 
 # Key Pages
 pages:
-  - https://www.patiocoverskaty.com/ (Homepage)
-  - https://www.patiocoverskaty.com/contact.html (Contact & Free Estimate)
-  - https://www.patiocoverskaty.com/gallery.html (Project Gallery)
-  - https://www.patiocoverskaty.com/reviews.html (Customer Reviews)
-  - https://www.patiocoverskaty.com/patio-covers.html (Patio Covers Service)
-  - https://www.patiocoverskaty.com/pergolas.html (Pergolas Service)
-  - https://www.patiocoverskaty.com/outdoor-kitchens.html (Outdoor Kitchens Service)
-  - https://www.patiocoverskaty.com/texas-patio-cover-engineering-guide.html (2026 Engineering Whitepaper)
+  - https://www.patiocoverkaty.net/ (Homepage)
+  - https://www.patiocoverkaty.net/contact.html (Contact & Free Estimate)
+  - https://www.patiocoverkaty.net/gallery.html (Project Gallery)
+  - https://www.patiocoverkaty.net/reviews.html (Customer Reviews)
+  - https://www.patiocoverkaty.net/patio-covers.html (Patio Covers Service)
+  - https://www.patiocoverkaty.net/pergolas.html (Pergolas Service)
+  - https://www.patiocoverkaty.net/outdoor-kitchens.html (Outdoor Kitchens Service)
+  - https://www.patiocoverkaty.net/texas-patio-cover-engineering-guide.html (2026 Engineering Whitepaper)
 
 # Location-Specific Service Pages
 location_pages:
-  - https://www.patiocoverskaty.com/katy-patio-covers.html (Katy, TX 77494)
-  - https://www.patiocoverskaty.com/cinco-ranch-patio-covers.html (Cinco Ranch, TX 77494)
-  - https://www.patiocoverskaty.com/fulshear-patio-covers.html (Fulshear, TX 77441)
-  - https://www.patiocoverskaty.com/richmond-patio-covers.html (Richmond, TX 77406/77469)
-  - https://www.patiocoverskaty.com/cypress-patio-covers.html (Cypress, TX 77429/77433)
-  - https://www.patiocoverskaty.com/sugar-land-patio-covers.html (Sugar Land, TX 77478/77479)
-  - https://www.patiocoverskaty.com/brookshire-patio-covers.html (Brookshire, TX 77423)
-  - https://www.patiocoverskaty.com/houston-patio-covers.html (West Houston, TX 77077/77079)
-  - https://www.patiocoverskaty.com/simonton-patio-covers.html (Simonton, TX 77476)
-  - https://www.patiocoverskaty.com/houston-heights-patio-covers.html (Houston Heights/Memorial, TX 77007/77008/77024)
-  - https://www.patiocoverskaty.com/spring-patio-covers.html (Spring, TX 77373/77379/77386/77388/77389)
-  - https://www.patiocoverskaty.com/the-woodlands-patio-covers.html (The Woodlands, TX 77380/77381/77382/77384/77389)
-  - https://www.patiocoverskaty.com/humble-patio-covers.html (Humble, TX 77338/77339/77346/77396)
+  - https://www.patiocoverkaty.net/katy-patio-covers.html (Katy, TX 77494)
+  - https://www.patiocoverkaty.net/cinco-ranch-patio-covers.html (Cinco Ranch, TX 77494)
+  - https://www.patiocoverkaty.net/fulshear-patio-covers.html (Fulshear, TX 77441)
+  - https://www.patiocoverkaty.net/richmond-patio-covers.html (Richmond, TX 77406/77469)
+  - https://www.patiocoverkaty.net/cypress-patio-covers.html (Cypress, TX 77429/77433)
+  - https://www.patiocoverkaty.net/sugar-land-patio-covers.html (Sugar Land, TX 77478/77479)
+  - https://www.patiocoverkaty.net/brookshire-patio-covers.html (Brookshire, TX 77423)
+  - https://www.patiocoverkaty.net/houston-patio-covers.html (West Houston, TX 77077/77079)
+  - https://www.patiocoverkaty.net/simonton-patio-covers.html (Simonton, TX 77476)
+  - https://www.patiocoverkaty.net/houston-heights-patio-covers.html (Houston Heights/Memorial, TX 77007/77008/77024)
+  - https://www.patiocoverkaty.net/spring-patio-covers.html (Spring, TX 77373/77379/77386/77388/77389)
+  - https://www.patiocoverkaty.net/the-woodlands-patio-covers.html (The Woodlands, TX 77380/77381/77382/77384/77389)
+  - https://www.patiocoverkaty.net/humble-patio-covers.html (Humble, TX 77338/77339/77346/77396)
 
 # Project Case Study Pages
 project_pages:
-  - https://www.patiocoverskaty.com/katy-patio-cover-project.html
-  - https://www.patiocoverskaty.com/cinco-ranch-outdoor-project.html
-  - https://www.patiocoverskaty.com/richmond-patio-project.html
-  - https://www.patiocoverskaty.com/fulshear-pergola-project.html
+  - https://www.patiocoverkaty.net/katy-patio-cover-project.html
+  - https://www.patiocoverkaty.net/cinco-ranch-outdoor-project.html
+  - https://www.patiocoverkaty.net/richmond-patio-project.html
+  - https://www.patiocoverkaty.net/fulshear-pergola-project.html
 
 # Structured Data
 schema_types: WebSite, LocalBusiness, HomeAndConstructionBusiness, GeneralContractor, Service, FAQPage, SpeakableSpecification
