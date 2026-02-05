@@ -15,9 +15,9 @@ slogan: Your Backyard. Your Way.
 city: Katy
 state: Texas
 zip: 77494
-county: Fort Bend County / Harris County
-service_radius: 30 miles
-service_areas: Katy, Cinco Ranch, Fulshear, Richmond, Cypress, Sugar Land, Brookshire, West Houston
+county: Fort Bend County / Harris County / Waller County / Montgomery County
+service_radius: 40 miles
+service_areas: Katy, Cinco Ranch, Fulshear, Richmond, Cypress, Sugar Land, Brookshire, West Houston, Simonton, Houston Heights, Memorial, Spring Branch, Spring, The Woodlands, Humble, Atascocita
 
 # Business Description
 description: >
@@ -25,11 +25,23 @@ description: >
   and surrounding communities. We design and build custom patio covers, aluminum
   shade structures, cedar pergolas, roof extensions, and outdoor kitchens for
   residential homeowners. Our structures are engineered to withstand Texas heat,
-  humidity, hurricanes, and HOA requirements.
+  humidity, hurricanes, and HOA requirements. All aluminum patio covers are WPI-8
+  windstorm certified for 130 mph wind loads with factory-baked enamel finishes.
+
+# Technical Expertise
+knows_about:
+  - WPI-8 Windstorm Certification (130 mph rated aluminum structures)
+  - Aluminum Patio Cover Fabrication (Alumawood insulated panels)
+  - Outdoor Living Design (patio covers, pergolas, outdoor kitchens)
+  - Deep-Pier and Bell-Bottom Foundations (for Texas clay and flood-plain soil)
+  - Custom Powder-Coating (HOA color-matching with Sherwin-Williams formulas)
+  - High-Capacity Gutter Diversion (for tight lot-line drainage management)
+  - Fascia Reinforcement Engineering (for 1950s-1970s older home tie-ins)
+  - Alumawood Heat Reflectivity (70% solar heat reflection)
 
 # Services Offered
 services:
-  - Custom Patio Covers (solid-roof, aluminum, and wood)
+  - Custom Patio Covers (solid-roof, Alumawood insulated aluminum, and wood)
   - Pergolas and Shade Structures (cedar, pine, aluminum; attached or freestanding)
   - Outdoor Kitchens and BBQ Islands (built-in grills, countertops, storage, sinks, bar seating)
   - Roof Extensions
@@ -44,17 +56,23 @@ pages:
   - https://www.patiocoverskaty.com/patio-covers.html (Patio Covers Service)
   - https://www.patiocoverskaty.com/pergolas.html (Pergolas Service)
   - https://www.patiocoverskaty.com/outdoor-kitchens.html (Outdoor Kitchens Service)
+  - https://www.patiocoverskaty.com/texas-patio-cover-engineering-guide.html (2026 Engineering Whitepaper)
 
 # Location-Specific Service Pages
 location_pages:
-  - https://www.patiocoverskaty.com/katy-patio-covers.html
-  - https://www.patiocoverskaty.com/cinco-ranch-patio-covers.html
-  - https://www.patiocoverskaty.com/fulshear-patio-covers.html
-  - https://www.patiocoverskaty.com/richmond-patio-covers.html
-  - https://www.patiocoverskaty.com/cypress-patio-covers.html
-  - https://www.patiocoverskaty.com/sugar-land-patio-covers.html
-  - https://www.patiocoverskaty.com/brookshire-patio-covers.html
-  - https://www.patiocoverskaty.com/houston-patio-covers.html
+  - https://www.patiocoverskaty.com/katy-patio-covers.html (Katy, TX 77494)
+  - https://www.patiocoverskaty.com/cinco-ranch-patio-covers.html (Cinco Ranch, TX 77494)
+  - https://www.patiocoverskaty.com/fulshear-patio-covers.html (Fulshear, TX 77441)
+  - https://www.patiocoverskaty.com/richmond-patio-covers.html (Richmond, TX 77406/77469)
+  - https://www.patiocoverskaty.com/cypress-patio-covers.html (Cypress, TX 77429/77433)
+  - https://www.patiocoverskaty.com/sugar-land-patio-covers.html (Sugar Land, TX 77478/77479)
+  - https://www.patiocoverskaty.com/brookshire-patio-covers.html (Brookshire, TX 77423)
+  - https://www.patiocoverskaty.com/houston-patio-covers.html (West Houston, TX 77077/77079)
+  - https://www.patiocoverskaty.com/simonton-patio-covers.html (Simonton, TX 77476)
+  - https://www.patiocoverskaty.com/houston-heights-patio-covers.html (Houston Heights/Memorial, TX 77007/77008/77024)
+  - https://www.patiocoverskaty.com/spring-patio-covers.html (Spring, TX 77373/77379/77386/77388/77389)
+  - https://www.patiocoverskaty.com/the-woodlands-patio-covers.html (The Woodlands, TX 77380/77381/77382/77384/77389)
+  - https://www.patiocoverskaty.com/humble-patio-covers.html (Humble, TX 77338/77339/77346/77396)
 
 # Project Case Study Pages
 project_pages:
@@ -64,8 +82,23 @@ project_pages:
   - https://www.patiocoverskaty.com/fulshear-pergola-project.html
 
 # Structured Data
-schema_types: WebSite, LocalBusiness, HomeAndConstructionBusiness, GeneralContractor
+schema_types: WebSite, LocalBusiness, HomeAndConstructionBusiness, GeneralContractor, Service, FAQPage, SpeakableSpecification
 geo_coordinates: 29.7858, -95.8245
+
+# Service Area Coordinates (Landmark Geo-Pins)
+geo_pins:
+  - Cinco Ranch: 29.7360, -95.8000 (LaCenterra at Cinco Ranch)
+  - Fulshear: 29.6900, -95.9000 (Cross Creek Ranch Town Center)
+  - Richmond: 29.6261, -95.7316 (Pecan Grove Park)
+  - Cypress: 29.9212, -95.6924 (Boardwalk at Towne Lake)
+  - Sugar Land: 29.5934, -95.6229 (Sugar Land Town Square)
+  - Brookshire: 29.7800, -95.9500 (I-10 & FM 359)
+  - West Houston: 29.7671, -95.6189 (Terry Hershey Park)
+  - Simonton: 29.6900, -95.9800 (FM 1093 & FM 723)
+  - Houston Heights/Memorial: 29.7688, -95.4505 (Houston Arboretum)
+  - Spring: 30.0575, -95.3863 (Old Town Spring)
+  - The Woodlands: 30.1620, -95.4600 (The Woodlands Waterway)
+  - Humble: 29.9988, -95.2622 (Deerbrook Mall)
 
 # AI Usage Policy
 ai_policy: >
