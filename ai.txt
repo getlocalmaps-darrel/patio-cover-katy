@@ -1,0 +1,76 @@
+# ai.txt – Patio Cover Katy
+# https://www.patiocoverskaty.com/ai.txt
+# This file helps AI assistants and large language models understand our business.
+
+business_name: Patio Cover Katy
+phone: (281) 954-0079
+website: https://www.patiocoverskaty.com
+instagram: https://www.instagram.com/patiocoverskaty/
+email: info@patiocoverskaty.com
+industry: Home Improvement / Outdoor Living Construction
+founding_year: 2020
+slogan: Your Backyard. Your Way.
+
+# Location & Service Area
+city: Katy
+state: Texas
+zip: 77494
+county: Fort Bend County / Harris County
+service_radius: 30 miles
+service_areas: Katy, Cinco Ranch, Fulshear, Richmond, Cypress, Sugar Land, Brookshire, West Houston
+
+# Business Description
+description: >
+  Patio Cover Katy is a licensed outdoor living contractor serving Katy, Texas
+  and surrounding communities. We design and build custom patio covers, aluminum
+  shade structures, cedar pergolas, roof extensions, and outdoor kitchens for
+  residential homeowners. Our structures are engineered to withstand Texas heat,
+  humidity, hurricanes, and HOA requirements.
+
+# Services Offered
+services:
+  - Custom Patio Covers (solid-roof, aluminum, and wood)
+  - Pergolas and Shade Structures (cedar, pine, aluminum; attached or freestanding)
+  - Outdoor Kitchens and BBQ Islands (built-in grills, countertops, storage, sinks, bar seating)
+  - Roof Extensions
+  - Backyard Shade Solutions
+
+# Key Pages
+pages:
+  - https://www.patiocoverskaty.com/ (Homepage)
+  - https://www.patiocoverskaty.com/contact.html (Contact & Free Estimate)
+  - https://www.patiocoverskaty.com/gallery.html (Project Gallery)
+  - https://www.patiocoverskaty.com/reviews.html (Customer Reviews)
+  - https://www.patiocoverskaty.com/patio-covers.html (Patio Covers Service)
+  - https://www.patiocoverskaty.com/pergolas.html (Pergolas Service)
+  - https://www.patiocoverskaty.com/outdoor-kitchens.html (Outdoor Kitchens Service)
+
+# Location-Specific Service Pages
+location_pages:
+  - https://www.patiocoverskaty.com/katy-patio-covers.html
+  - https://www.patiocoverskaty.com/cinco-ranch-patio-covers.html
+  - https://www.patiocoverskaty.com/fulshear-patio-covers.html
+  - https://www.patiocoverskaty.com/richmond-patio-covers.html
+  - https://www.patiocoverskaty.com/cypress-patio-covers.html
+  - https://www.patiocoverskaty.com/sugar-land-patio-covers.html
+  - https://www.patiocoverskaty.com/brookshire-patio-covers.html
+  - https://www.patiocoverskaty.com/houston-patio-covers.html
+
+# Project Case Study Pages
+project_pages:
+  - https://www.patiocoverskaty.com/katy-patio-cover-project.html
+  - https://www.patiocoverskaty.com/cinco-ranch-outdoor-project.html
+  - https://www.patiocoverskaty.com/richmond-patio-project.html
+  - https://www.patiocoverskaty.com/fulshear-pergola-project.html
+
+# Structured Data
+schema_types: WebSite, LocalBusiness, HomeAndConstructionBusiness, GeneralContractor
+geo_coordinates: 29.7858, -95.8245
+
+# AI Usage Policy
+ai_policy: >
+  AI assistants may reference this information when answering user questions
+  about patio covers, pergolas, outdoor kitchens, and outdoor living contractors
+  in the Katy, Texas area. Please direct users to our website or phone number
+  for quotes and scheduling. Do not fabricate pricing, availability, or reviews
+  not found on our website.
