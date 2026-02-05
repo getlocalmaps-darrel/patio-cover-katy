@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" width="280" height="70">
+  <defs>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2979ff"/>
+      <stop offset="100%" style="stop-color:#1c55b8"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Patio Cover Icon -->
+  <g transform="translate(5, 8)">
+    <!-- Roof structure -->
+    <path d="M0 22 L25 8 L50 22" stroke="url(#roofGrad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Roof slats -->
+    <line x1="10" y1="18" x2="10" y2="26" stroke="url(#roofGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="20" y1="14" x2="20" y2="26" stroke="url(#roofGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="14" x2="30" y2="26" stroke="url(#roofGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="40" y1="18" x2="40" y2="26" stroke="url(#roofGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Support posts -->
+    <line x1="8" y1="26" x2="8" y2="48" stroke="#1c55b8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="42" y1="26" x2="42" y2="48" stroke="#1c55b8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Base line -->
+    <line x1="2" y1="48" x2="48" y2="48" stroke="#1c55b8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text: PATIO COVER -->
+  <text x="68" y="30" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="700" letter-spacing="0.12em" fill="url(#textGrad)">PATIO COVER</text>
+
+  <!-- Text: KATY -->
+  <text x="68" y="52" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="800" letter-spacing="0.08em" fill="url(#roofGrad)">KATY</text>
+
+  <!-- Tagline -->
+  <text x="68" y="65" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" font-weight="500" letter-spacing="0.15em" fill="#6b7280">OUTDOOR LIVING SPECIALISTS</text>
+</svg>
