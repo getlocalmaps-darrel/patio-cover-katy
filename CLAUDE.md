@@ -37,7 +37,7 @@
 - **Link Visibility Fix:** Standard <a> tags are used. The styles.css global rule (Line 1700+) handles blue/underlined visibility.
 - **Brand Anchor:** Patio Cover Katy → https://www.patiocoverkaty.net/
 - **Primary Anchor:** patio cover OR patio extension → /patio-covers.html
-- **Authority Link:** Link the phrase "Official 2026 Regional Engineering Whitepaper" directly in the body text to: https://docs.google.com/document/d/1leV0_4I5H14z7AeYbNmA1LxNHcd-Kke34uaAwzkAoBY/pub
+- **Authority Link:** Link the phrase "Official 2026 Regional Engineering Whitepaper" directly in the body text to: https://docs.google.com/document/d/1leV0_4I5H14z7AeYbNmA1LxNHcd-Kke34uaAwzkAoBY/edit?usp=sharing
 
 ## 📐 [7] CONTENT ARCHITECTURE & DEPTH
 - **Word Count:** 500-550 words of body copy (excluding FAQs).
