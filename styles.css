@@ -1701,10 +1701,10 @@ body {
 }
 
 /* ==========================================================================
-   🔗 GLOBAL CONTENT LINK STYLING (THE FINAL "GHOST" BUTTON FIX)
+   🔗 GLOBAL CONTENT LINK STYLING (THE "BUTTON-SAFE" FIX)
    ========================================================================== */
 
-/* 1. Target links ONLY inside text blocks so buttons stay normal */
+/* 1. Target ONLY links inside actual text paragraphs and lists */
 main p a, 
 main li a, 
 .faq-answer a, 
@@ -1712,24 +1712,45 @@ main li a,
   color: var(--primary-blue) !important;
   text-decoration: underline !important;
   font-weight: 600;
-  transition: color 0.2s ease;
 }
 
-/* 2. Hover state for text links */
-main p a:hover, 
-main li a:hover, 
-.faq-answer a:hover, 
-.inner-intro-body a:hover {
-  color: var(--primary-blue-dark) !important;
-  text-decoration: none !important;
-}
-
-/* 3. PROTECT BUTTONS: Ensure buttons never get underlines or blue text */
-.btn, 
-.btn-ghost, 
-.btn-primary, 
-.nav-links a, 
-.nav-call {
+/* 2. PROTECT BUTTONS: Ensure buttons and nav NEVER get underlines or blue text */
+.btn, .btn-primary, .btn-outline, .btn-ghost, .nav-links a, .nav-call {
   text-decoration: none !important;
   color: inherit !important;
+}
+
+/* 3. NEW CONTAINERS: Review and Pro-Tip Styling */
+.pro-tip-card, .review-container {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.review-stars {
+  color: #ffc107; /* Gold Stars */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 4. TABLE STYLING: Fix for plain looking comparison table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.comparison-table th {
+  background: var(--primary-blue);
+  color: #ffffff;
+  padding: 1rem;
+  text-align: left;
+}
+.comparison-table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--border-subtle);
 }
