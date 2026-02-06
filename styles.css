@@ -1701,23 +1701,35 @@ body {
 }
 
 /* ==========================================================================
-   🔗 GLOBAL CONTENT LINK STYLING (FIX FOR INVISIBLE LINKS)
+   🔗 GLOBAL CONTENT LINK STYLING (THE FINAL "GHOST" BUTTON FIX)
    ========================================================================== */
 
-/* This targets every link inside your main text areas */
-.inner-intro-body a, 
-.faq-answer a,
-main a:not(.btn) {
-  color: var(--primary-blue) !important; /* Forces the blue from your :root */
-  text-decoration: underline !important; /* Ensures users know it's clickable */
+/* 1. Target links ONLY inside text blocks so buttons stay normal */
+main p a, 
+main li a, 
+.faq-answer a, 
+.inner-intro-body a {
+  color: var(--primary-blue) !important;
+  text-decoration: underline !important;
   font-weight: 600;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-/* Darkens the link slightly when someone hovers over it */
-.inner-intro-body a:hover, 
-main a:not(.btn):hover {
-  opacity: 0.8;
-  text-decoration: none;
+/* 2. Hover state for text links */
+main p a:hover, 
+main li a:hover, 
+.faq-answer a:hover, 
+.inner-intro-body a:hover {
+  color: var(--primary-blue-dark) !important;
+  text-decoration: none !important;
 }
 
+/* 3. PROTECT BUTTONS: Ensure buttons never get underlines or blue text */
+.btn, 
+.btn-ghost, 
+.btn-primary, 
+.nav-links a, 
+.nav-call {
+  text-decoration: none !important;
+  color: inherit !important;
+}
