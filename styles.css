@@ -1701,10 +1701,10 @@ body {
 }
 
 /* ==========================================================================
-   🔗 GLOBAL CONTENT LINK STYLING (THE "BUTTON-SAFE" FIX)
+   🔗 GLOBAL REPAIR: NAVIGATION, CONTAINERS, & LINKS
    ========================================================================== */
 
-/* 1. Target ONLY links inside actual text paragraphs and lists */
+/* 1. BODY LINKS: Blue and Underlined for SEO visibility */
 main p a, 
 main li a, 
 .faq-answer a, 
@@ -1714,43 +1714,60 @@ main li a,
   font-weight: 600;
 }
 
-/* 2. PROTECT BUTTONS: Ensure buttons and nav NEVER get underlines or blue text */
-.btn, .btn-primary, .btn-outline, .btn-ghost, .nav-links a, .nav-call {
+/* 2. NAVIGATION & FOOTER: Force White Text (The Fix) */
+.nav-links a, 
+.nav-call, 
+.nav-call a,
+.footer-links a,
+.btn-ghost,
+.mobile-menu a {
+  color: #ffffff !important; 
   text-decoration: none !important;
-  color: inherit !important;
+  font-weight: 500;
 }
 
-/* 3. NEW CONTAINERS: Review and Pro-Tip Styling */
-.pro-tip-card, .review-container {
+/* 3. CONTAINERS: Review and Pro-Tip (White Background Cards) */
+.review-container, .pro-tip-card {
   background: #ffffff;
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.5rem;
   box-shadow: var(--shadow-soft);
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
   border: 1px solid var(--border-subtle);
+  color: #333333; /* Ensure text inside white cards is dark */
 }
 
+/* 4. GOLD STARS: For Homeowner Reviews */
 .review-stars {
-  color: #ffc107; /* Gold Stars */
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  color: #ffc107;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  display: block;
 }
 
-/* 4. TABLE STYLING: Fix for plain looking comparison table */
+/* 5. TABLES: Professional Comparison Styling */
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
   background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 .comparison-table th {
   background: var(--primary-blue);
   color: #ffffff;
-  padding: 1rem;
+  padding: 1.2rem;
   text-align: left;
 }
 .comparison-table td {
-  padding: 0.8rem 1rem;
+  padding: 1rem;
   border-bottom: 1px solid var(--border-subtle);
+  color: #333333;
+}
+
+/* 6. BUTTON PROTECT: Ensure main buttons don't get underlined */
+.btn, .btn-primary {
+  text-decoration: none !important;
 }
