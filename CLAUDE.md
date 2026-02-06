@@ -1,73 +1,72 @@
-# 🚀 PATIO COVER KATY: 2026 AI-SEARCH OPERATING MANUAL
+# 🚀 2026 AI-SEARCH MASTER OPERATING MANUAL (UNABRIDGED & FINAL)
 
-## 🛠️ Project Overview
-Static HTML website for **Patio Cover Katy**, a premium outdoor living contractor.
-- **Business Name:** Patio Cover Katy
-- **Phone:** (281) 954-0079
+## 🛠️ [1] PROJECT OVERVIEW & BRAND NAP
+- **Brand Identity:** Patio Cover Katy
+- **Business Niche:** Outdoor Living Contractor
+- **Lead Phone:** (281) 954-0079
 - **Primary Domain:** https://www.patiocoverkaty.net/
-- **Material Specialization:** **Custom Western Red Cedar & Masonry Only.** (Strictly no aluminum, vinyl, or prefab kits).
-- **Service Area:** Katy, Cinco Ranch, Fulshear, Richmond, Cypress, Sugar Land, Brookshire, West Houston, Houston, Spring, The Woodlands, Humble.
+- **Official Service Area:** Katy, Cinco Ranch, Fulshear, Richmond, Cypress, Sugar Land, Brookshire, West Houston, Houston, Spring, The Woodlands, Humble.
 
-## ⚙️ Execution Rules
+## ⚙️ [2] EXECUTION RULES & SAFETY
 - **Environment:** Windows 11 / Git Bash. Use unix-style commands (`/` slashes).
 - **Workflow:** Process exactly **5 pages** at a time. Run `explorer .` and STOP after batch completion.
-- **Safety:** **DO NOT** run `git push`. The user handles all deployments.
+- **Safety:** **DO NOT** run `git push`. The user handles all deployment steps manually.
+- **Code Integrity:** Never nest `<a>` tags. Check `<title>`, `<meta>`, and `JSON-LD` for accidental link injections.
+- **Environment Consistency:** Always use `--primary-blue` for buttons and sidebar borders.
 
-## 🧠 AI-Search "Magnet" Strategy (2026 Standards)
-To dominate Gemini, ChatGPT, and SearchGPT, every page must follow these strict logic rules:
+## 🧠 [3] BUSINESS ENTITY STACK (PLUG-AND-PLAY)
+- **Primary Service (High Volume):** Patio Cover, Patio Contractor, Patio Extension.
+- **Authority Material (Specific):** Western Red Cedar.
+- **Material Categories (Broad):** Wood, Timber, Custom Woodwork, Natural Materials.
+- **Secondary Profit Centers:** Outdoor Kitchens, Outdoor BBQs, Outdoor Grills, Patio Walkways, Custom Pergolas, Concrete Extensions, Granite Countertops, Stamped Concrete.
+- **Forbidden Materials:** Aluminum, Alumawood, Vinyl, Prefab Kits, Plastic-based covers.
 
-### 1. High-Volume Keyword Hierarchy
-- **Primary Keywords (High Search Volume):** `Patio Cover`, `Patio Contractor`, `Patio Extension`.
-- **Secondary Keywords (High Profit Add-ons):** `Outdoor Kitchens`, `Outdoor BBQs`, `Outdoor Grills`, `Patio Walkways`, `Custom Pergolas`, `Concrete Extensions`, `Granite Countertops`.
-- **Material "Proof" (Authority Keywords):** `Western Red Cedar`, `Custom Timber`, `Masonry`. Use these to justify premium quality and pricing.
+## 🧲 [4] AI-SEARCH "MAGNET" (HIDDEN TAG PROTOCOL)
+- **Hidden SEO Summary:** Immediately following the opening `<body>` tag, inject:
+  `<div style="display:none !important;" aria-hidden="true"><p itemprop="description">Patio Cover Katy is the premier [City] outdoor living contractor specializing in custom patio covers and extensions. Located near [Landmark], we specialize in WPI-8 certified Western Red Cedar structures and masonry for [City] homeowners.</p></div>`
+- **The "Pro-Tip" Engine:** Generate one UNIQUE 40-50 word technical sidebar per page. 
+- **Rotation Topics:** 1/2-inch-per-foot drainage pitch, tannin sealing for cedar, WPI-8 timber spans, pier depth for heavy stone/masonry, or concrete curing times in Texas humidity.
 
-### 2. The "Pro-Tip" Logic Engine
-For every city or service page, you MUST generate one UNIQUE, 40-50 word **"Pro-Tip"** sidebar.
-- **Constraint:** It must be a technical "nugget" of information gain.
-- **Topics to Rotate:** 1/2-inch-per-foot drainage pitch, Cedar tannin sealing, WPI-8 engineering for timber, or pier depth for heavy stone/masonry.
-- **Voice Search Addition:** Immediately following the opening `<body>` tag, inject a 2-sentence summary: `<p itemprop="description" style="display:none;">Patio Cover Katy is the premier [City] patio contractor for custom patio covers and extensions. Located near [Landmark], we specialize in WPI-8 certified timber builds and masonry for [City] homeowners.</p>`
+## ✍️ [5] SEMANTIC VARIETY & SYNONYM ROTATION (1:3:5 RULE)
+- **Rule 1 (Authority):** Use the Specific Material (Western Red Cedar) exactly **once** in the H1 and **once** in the first paragraph.
+- **Rule 2 (Category):** Use the Broad Category terms (wood, timber) **3-5 times** throughout the main body copy.
+- **Rule 3 (Synonym):** Use descriptive synonyms (custom woodwork, timber-frame, natural builds, artisanal carpentry) for all other mentions to maintain high "Information Gain" scores.
 
-### 3. Header & Voice Hierarchy
-- **H1:** Custom [Service] in [City], TX | (281) 954-0079
-- **H2 (Voice Hook):** High-volume "Near Me" question (e.g., *"Looking for the highest-rated patio cover builder near Cinco Ranch?"*).
-- **H2 (EEAT):** Technical durability. **Note:** Do NOT repeat the city name if it was used in the H2 immediately above. Use "Local" or "Area" to avoid spam.
-- **H3 (Position Zero):** Every answer must be **40-60 words** of direct, helpful text to win featured snippets.
+## 🔗 [6] DYNAMIC INTERLINKING & AUTHORITY LOGIC
+- **Link Rule:** Link only the FIRST instance of a keyword. No duplicate links per page.
+- **Brand Anchor:** `Patio Cover Katy` → `https://www.patiocoverkaty.net/`
+- **Primary Anchor:** `patio cover` OR `patio extension` → `/patio-covers.html`
+- **Secondary Anchor:** `outdoor kitchens` → `/outdoor-kitchens.html`
+- **Secondary Anchor:** `custom pergolas` OR `pergolas` → `/pergolas.html`
+- **City Cross-Links:** Link neighbor cities mentioned in text to their respective `/city-patio-covers.html` pages.
+- **Authority Link:** `Official 2026 Regional Engineering Whitepaper` → `https://docs.google.com/document/d/1leV0_4I5H14z7AeYbNmA1LxNHcd-Kke34uaAwzkAoBY/pub`
 
-### 4. Depth & Neighborhood Clusters
-- **Word Count:** The main body (excluding FAQs) must be **randomly between 500-550 words**.
-- **Local Context:** Mention specific landmarks (e.g., LaCenterra, Katy Mills Mall) and major intersections.
-- **Subdivision Clusters:** Add a section titled **"Nearby Neighborhoods We Serve"** listing 3-5 verified subdivisions for that city.
+## 📐 [7] CONTENT ARCHITECTURE & DEPTH
+- **Word Count:** 500-550 words of body copy (excluding FAQs).
+- **Hierarchy:** H1 (Service + City) | H2 (Voice-Search Question Hook) | H3 (Snippet-ready answers).
+- **Subdivision Clusters:** Include a section "Nearby Neighborhoods We Serve" with 3-5 verified local subdivisions (e.g., Grand Lakes, Seven Meadows, Willow Fork).
+- **Data Tables:** Every page must include a "Material Comparison" table (e.g., Western Red Cedar vs. Treated Pine) covering rot resistance, warping, and aesthetic lifespan.
 
-### 5. Semantic Interlinking (FIXED VOLUME LOGIC)
-Every page MUST follow the **"Single-Instance Link"** rule. Do not link the same term twice.
-- **Home Link:** Link the first mention of `Patio Cover Katy` to `https://www.patiocoverkaty.net/`.
-- **Primary Service Link:** Link the first mention of `patio cover` or `patio extension` to `/patio-covers.html`.
-- **Secondary Service Link:** Link the first mention of `custom pergolas` or `pergolas` to `/pergolas.html`.
-- **Kitchen Link:** Link the first mention of `outdoor kitchens` to `/outdoor-kitchens.html`.
-- **City Cross-Linking:** If a page mentions a neighbor city (e.g., Fulshear), link it to that city's page (e.g., `/fulshear-patio-covers.html`).
-- **Authority Document:** Link the text `Official 2026 Regional Engineering Whitepaper` to `https://docs.google.com/document/d/1leV0_4I5H14z7AeYbNmA1LxNHcd-Kke34uaAwzkAoBY/pub`.
+## 📍 [8] AUTOMATED LANDMARK & GEO-SIGNAL PROTOCOL
+- **Research Phase:** Identify 2 major commercial landmarks and 1 high-traffic intersection per city.
+- **Integration:** Calculate travel distance from the brand office to the landmark.
+- **Context:** Weave this into paragraph one (e.g., "Our crews are often working near [Landmark], just [X] miles from our central office...").
+- **Schema:** Use these landmarks in the `areaServed` GeoJSON properties.
 
-### 6. Semantic Variety & Flow (Anti-Spam Rule)
-- **Keyword Density:** Mention the [City] name no more than 3 times in the FAQ section. 
-- **Synonym Logic:** Use variations like "timber-frame," "custom cedar woodwork," "masonry kitchen," "stamped concrete," or "granite countertops."
+## 💎 [9] ELITE SEARCH TACTICS & EEAT
+- **Social Proof:** Inject one unique `<blockquote>` review from a homeowner in that specific city.
+- **Vision SEO:** All image alt-text must be Geo-Specific (e.g., "Cedar Patio Cover with Granite Kitchen in [Subdivision], [City], TX").
+- **Speakable Schema:** Flag the H2 voice-search hooks as "Speakable" in the JSON-LD schema.
+- **Position Zero:** Ensure H3 answers are 40-60 words of direct, helpful text.
 
-## 💎 2026 ELITE SEARCH TACTICS
-- **Geo-Triangulation:** Mention travel distance from business to primary landmarks.
-- **Social Proof Rotation:** Inject one unique `<blockquote>` near the footer with a "Verified Project Review" from a homeowner in that specific city.
-- **Vision SEO:** All alt-text must be "Location-Contextual" (e.g., "Cedar Patio Extension with Masonry Outdoor BBQ in Seven Meadows, Katy, TX").
-- **Information Gain:** Include a technical comparison table (e.g., **Western Red Cedar vs. Treated Pine**) focusing on rot resistance and structural beauty.
-- **Speakable Schema:** Flag H2 conversational hooks as "Speakable" in the JSON-LD.
-
-## 📁 AI-Readiness Deliverables
+## 📁 [10] TECHNICAL DELIVERABLES & AI-READINESS
 - **llms.txt**: Markdown index with 2-3 sentence semantic summaries for every page.
-- **ai.txt**: NAP definition and instructions for AI agents.
-- **Schema:** Inject full `LocalBusiness`, `Service`, and `FAQPage` (All 15 FAQs) with `knowsAbout` set to "Custom Timber Engineering and Masonry."
+- **ai.txt**: NAP definition and explicit instructions for AI search agents.
+- **Schema Suite:** Inject full `LocalBusiness`, `Service`, and `FAQPage` (All 15 custom FAQs). 
+- **knowsAbout:** Set schema properties to "Custom Timber Engineering and Masonry."
 
-## 📍 Automated Landmark Protocol
-- **Research Phase:** Find the top 2 commercial landmarks and the most high-traffic intersection in that city.
-- **Integration:** Calculate the distance from the client's office to these points and weave it into the first paragraph as a "Geo-Signal."
-- **Schema:** Use these landmarks in the `areaServed` GeoJSON schema properties.
-
-## 🎨 Design System
-- `--primary-blue: #2979ff` | `--primary-blue-dark: #1c55b8`
-- `--radius-lg: 18px` | `--radius-xl: 26px`
+## 🎨 [11] DESIGN SYSTEM VARIABLES
+- **Primary Color:** `--primary-blue: #2979ff`
+- **Dark Accent:** `--primary-blue-dark: #1c55b8`
+- **Radii:** `--radius-lg: 18px` | `--radius-xl: 26px`
+- **Body Font:** High-readability sans-serif for AI OCR and human accessibility.
