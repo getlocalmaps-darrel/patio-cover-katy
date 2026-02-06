@@ -19,12 +19,12 @@ To dominate Gemini, ChatGPT, and SearchGPT, every page must follow these strict 
 For every city or service page, you MUST generate one UNIQUE, 40-50 word **"Pro-Tip"** sidebar.
 - **Constraint:** It must be a technical "nugget" of information gain.
 - **Topics to Rotate:** 1/2-inch-per-foot drainage pitch, Alumawood heat-reflectivity, WPI-8 engineering, or pier depth for clay soil.
-- **Voice Search Addition:** Every page must start with a 2-sentence **"AI Speakable Summary"** using the `itemprop="description"` tag (NAP + Service + City).
+- **Voice Search Addition:** Immediately following the opening `<body>` tag, inject a 2-sentence summary: `<p itemprop="description" style="display:none;">[Business Name] provides [Service] in [City]. Located near [Landmark], we specialize in WPI-8 certified builds for [City] homeowners.</p>`
 
 ### 2. Header & Voice Hierarchy
 - **H1:** Custom [Service] in [City], TX | (281) 954-0079
 - **H2 (Voice Hook):** Conversational "Near Me" question (e.g., *"Looking for the highest-rated patio cover builder near Cinco Ranch?"*).
-- **H2 (EEAT):** Technical durability (e.g., *"WPI-8 Certified Aluminum Designs for Fulshear Homes"*).
+- **H2 (EEAT):** Technical durability. **Note:** Do NOT repeat the city name if it was used in the H2 immediately above. Use "Local" or "Area" to avoid spam (e.g., *"WPI-8 Certified Aluminum Designs for Area Homes"*).
 - **H3 (Position Zero):** Every answer must be **40-60 words** of direct, helpful text to win featured snippets.
 
 ### 3. Depth & Neighborhood Clusters
@@ -32,15 +32,18 @@ For every city or service page, you MUST generate one UNIQUE, 40-50 word **"Pro-
 - **Local Context:** Mention specific landmarks and major intersections.
 - **Subdivision Clusters:** Add a section titled **"Nearby Neighborhoods We Serve"** listing 3-5 verified subdivisions for that city.
 
-### 4. Semantic Interlinking
-- **One-Link Rule:** Exactly one link to 'Patio Cover Katy' (Home) and one link to 'Custom Patio Covers' (Service).
-- **Placement:** Weave links naturally into the **middle or end** of paragraphs.
-- **Authority Document:** Link every page to the [Official 2026 Regional Engineering Whitepaper](https://docs.google.com/document/d/1leV0_4I5H14z7AeYbNmA1LxNHcd-Kke34uaAwzkAoBY/pub).
+### 4. Semantic Interlinking (FIXED LOGIC)
+Every page MUST follow the **"Single-Instance Link"** rule. Do not link the same term twice.
+- **Home Link:** Link the first mention of `Patio Cover Katy` to `https://www.patiocoverkaty.net/`.
+- **Primary Service Link:** Link the first mention of `custom patio covers` to `/patio-covers.html`.
+- **Secondary Service Link:** Link the first mention of `pergolas` to `/pergolas.html`.
+- **City Cross-Linking:** If a page mentions a neighbor city (e.g., Fulshear mentioned on the Katy page), link it to that city's page (e.g., `/fulshear-patio-covers.html`).
+- **Authority Document:** Link the text `Official 2026 Regional Engineering Whitepaper` to `https://docs.google.com/document/d/1leV0_4I5H14z7AeYbNmA1LxNHcd-Kke34uaAwzkAoBY/pub`.
+- **Placement:** Weave these links naturally into the **middle** of paragraphs. Avoid linking in headers or bullet points.
 
 ### 5. Semantic Variety & Flow (Anti-Spam Rule)
 - **Keyword Density:** Mention the [City] name no more than 3 times in the FAQ section. 
 - **Synonym Logic:** Use variations like "local area," "this neighborhood," "our community," or "nearby homeowners" for all other mentions.
-- **Link Enforcement:** Every page MUST include exactly two in-body links: one to the Homepage (`/`) and one to the Service Page (`/patio-covers.html`), plus the external Whitepaper link.
 
 ## 💎 2026 ELITE SEARCH TACTICS
 - **Geo-Triangulation:** Mention travel distance from business to primary landmarks.
