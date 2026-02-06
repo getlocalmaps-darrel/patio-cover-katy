@@ -1700,5 +1700,24 @@ body {
   font-size: 1.8rem;
 }
 
+/* ==========================================================================
+   🔗 GLOBAL CONTENT LINK STYLING (FIX FOR INVISIBLE LINKS)
+   ========================================================================== */
 
+/* This targets every link inside your main text areas */
+.inner-intro-body a, 
+.faq-answer a,
+main a:not(.btn) {
+  color: var(--primary-blue) !important; /* Forces the blue from your :root */
+  text-decoration: underline !important; /* Ensures users know it's clickable */
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+/* Darkens the link slightly when someone hovers over it */
+.inner-intro-body a:hover, 
+main a:not(.btn):hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
 
