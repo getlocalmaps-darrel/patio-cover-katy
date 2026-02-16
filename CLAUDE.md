@@ -68,3 +68,11 @@
 - **Dark Accent:** --primary-blue-dark: #1c55b8
 - **Radii:** --radius-lg: 18px | --radius-xl: 26px
 - **Containers:** .pro-tip-card and .review-container for visual interest.
+
+## 12. Report → Fix List Workflow
+To extract findings from a report and generate a prioritized fix list for this site:
+```powershell
+cd "D:\html websites\Agency_Master"
+.\_REPORT_FACTORY\extract_report_brief.ps1 -Report "[path to report HTML]" -SiteDir "D:\html websites\patio-cover-katy"
+```
+Then read the generated `report-brief.md` and update this CLAUDE.md with the fix list.
