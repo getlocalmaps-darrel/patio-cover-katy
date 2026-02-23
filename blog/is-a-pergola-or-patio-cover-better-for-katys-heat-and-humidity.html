@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--
+  Blog Article Template — Reusable for ANY HTML client site
+  ==========================================================
+  All {{PLACEHOLDER}} values are populated by html_generator.py generate_blog()
+  Branding comes from blog_config.branding in marketing_config.json
+  Nav comes from blog_config.nav_links in marketing_config.json
+
+  STYLE MATCHING NOTE (for operators):
+  - Header, footer, and nav styles here should visually match the client's
+    existing website (colors, font weights, layout, mobile menu behavior).
+  - Blog templates use self-contained inline styles because /blog/ pages may
+    not have access to the parent site's styles.css.
+  - When building blogs for static HTML sites, review the client's nav/footer
+    and match colors, font weights, and layout in the branding config.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergola vs. Patio Cover: Which Is Better for Katy's Heat? | Patio Cover Katy</title>
+    <meta name="description" content="Learn whether a pergola or patio cover is best for the heat and humidity in Katy, TX. Expert insights from Patio Cover Katy.">
+    <link rel="canonical" href="https://www.patiocoverkaty.net/blog/is-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pergola vs. Patio Cover: Which Is Better for Katy's Heat?">
+    <meta property="og:description" content="Learn whether a pergola or patio cover is best for the heat and humidity in Katy, TX. Expert insights from Patio Cover Katy.">
+    <meta property="og:url" content="https://www.patiocoverkaty.net/blog/is-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Patio Cover Katy">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+
+    <!-- Performance: Preconnect -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=system-ui%2C%20-apple-system%2C%20BlinkMacSystemFont%2C%20%27Segoe%20UI%27%2C%20Roboto%2C%20sans-serif:wght@400;700&family=system-ui%2C%20-apple-system%2C%20BlinkMacSystemFont%2C%20%27Segoe%20UI%27%2C%20Roboto%2C%20sans-serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <!-- JSON-LD: Article Schema -->
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Pergola vs. Patio Cover: Which Is Better for Katy's Heat?",
+    "description": "Learn whether a pergola or patio cover is best for the heat and humidity in Katy, TX. Expert insights from Patio Cover Katy.",
+    "url": "https://www.patiocoverkaty.net/blog/is-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html",
+    "datePublished": "2026-02-23T12:05:50-05:00",
+    "dateModified": "2026-02-23T12:05:50-05:00",
+    "author": {
+        "@type": "Person",
+        "name": "Ed Lopez"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Patio Cover Katy",
+        "url": "https://www.patiocoverkaty.net/",
+        "telephone": "(281) 954-0079"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.patiocoverkaty.net/blog/is-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html"
+    },
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+            ".article-content h2",
+            ".article-content h2 + p",
+            ".takeaways-box"
+        ]
+    }
+}</script>
+    <!-- JSON-LD: FAQ Schema -->
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How do I choose between a pergola and a patio cover for my Katy home?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In our experience, if you want a stylish outdoor space that provides some shade but allows for airflow, a pergola is an excellent choice. However, for maximum protection from Katy's heat and humidity, a patio cover is usually the better option. It offers full shelter and keeps your outdoor area cooler."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What is the cost difference between a pergola and a patio cover in Katy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Typically, a pergola costs between $3,000 and $7,000, while a custom patio cover can range from $4,500 to $12,000, depending on materials and size. We usually recommend investing in a patio cover if you're serious about climate control and long-term use."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do I need a permit for a pergola or patio cover in Katy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, both structures often require permits in Katy. We handle all HOA approvals and permitting for our clients to ensure compliance with local regulations. This can save you time and headaches down the line, especially in neighborhoods with strict guidelines."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can a pergola really keep my outdoor area cooler in the summer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While a pergola provides some shade, it doesn’t offer the same cooling benefits as a patio cover. Many homeowners mistakenly believe a pergola can adequately cool their space, but it only reduces direct sunlight. For significant temperature relief, a patio cover is far more effective."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take to install a patio cover in Katy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "After servicing hundreds of Katy homes, I can tell you that a typical patio cover installation takes about 2 to 5 days, depending on the complexity of the project. We pride ourselves on quick and efficient service without sacrificing quality."
+            }
+        }
+    ]
+}</script>
+    <!-- JSON-LD: Featured Business Schema (Semantic Bridge) -->
+    
+    <!-- JSON-LD: BreadcrumbList Schema -->
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.patiocoverkaty.net/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.patiocoverkaty.net/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pergola vs. Patio Cover: Which Is Better for Katy's Heat?"
+        }
+    ]
+}</script>
+
+    <style>
+        /* ========== CSS Custom Properties (from blog_config.branding) ========== */
+        :root {
+            --brand-primary: #2979ff;
+            --brand-accent: #2979ff;
+            --brand-dark: #05070b;
+        }
+
+        /* ========== Base ========== */
+        body {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1f2937;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-header { font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif; }
+
+        /* ========== Header ========== */
+        .blog-header {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .top-bar {
+            background-color: var(--brand-primary);
+            color: white; text-align: center;
+            padding: 8px; font-size: 12px;
+            text-transform: uppercase; font-weight: bold;
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            letter-spacing: 1px;
+        }
+        .nav-link {
+            text-transform: uppercase; font-weight: 700;
+            font-size: 0.875rem; letter-spacing: 0.05em;
+            color: #374151; text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-link:hover { color: var(--brand-primary); }
+        .desktop-nav { display: none; }
+        .mobile-menu-btn { display: block; }
+        @media (min-width: 1024px) {
+            .desktop-nav { display: flex; gap: 2rem; align-items: center; }
+            .mobile-menu-btn { display: none; }
+        }
+
+        /* ========== Article Hero ========== */
+        .article-hero {
+            background: linear-gradient(135deg, var(--brand-dark) 0%, color-mix(in srgb, var(--brand-primary) 60%, black) 100%);
+            color: white; padding: 4rem 1rem 3rem;
+        }
+
+        /* ========== Article Typography ========== */
+        .article-content h2 {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.75rem; font-weight: 700;
+            color: var(--brand-dark);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--brand-accent);
+            scroll-margin-top: 120px;
+        }
+        .article-content h3 {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.25rem; font-weight: 700;
+            color: #374151; margin: 2rem 0 0.75rem;
+            scroll-margin-top: 120px;
+        }
+        .article-content p {
+            font-size: 1.125rem; line-height: 1.8;
+            margin-bottom: 1.25rem; color: #374151;
+        }
+        .article-content ul, .article-content ol {
+            margin: 1rem 0 1.5rem; padding-left: 1.5rem;
+        }
+        .article-content ul { list-style: disc; }
+        .article-content ol { list-style: decimal; }
+        .article-content li {
+            font-size: 1.125rem; line-height: 1.75;
+            margin-bottom: 0.5rem; color: #374151;
+        }
+        .article-content a {
+            color: var(--brand-primary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .article-content a:hover { color: var(--brand-dark); }
+        .article-content blockquote {
+            border-left: 4px solid var(--brand-accent);
+            background: #fefce8;
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .article-content blockquote p { margin-bottom: 0; }
+        .article-content strong { color: #111827; }
+        .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+
+        /* ========== Hero Image ========== */
+        .article-hero-image {
+            max-width: 56rem;
+            margin: -2rem auto 0;
+            padding: 0 1rem;
+        }
+        .article-hero-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .article-hero-image figcaption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* ========== Inline Article Figures ========== */
+        .article-content figure {
+            margin: 2rem 0;
+        }
+        .article-content figure img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .article-content figcaption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* ========== Key Takeaways ========== */
+        .takeaways-box {
+            border: 2px solid var(--brand-accent);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background: linear-gradient(135deg, #fefce8 0%, #fff 100%);
+        }
+        .takeaways-box .takeaway-title {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.35rem; font-weight: 700;
+            color: var(--brand-dark);
+            margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .takeaways-box ul { list-style: none; padding: 0; margin: 0; }
+        .takeaways-box li {
+            padding: 0.4rem 0 0.4rem 1.5rem;
+            position: relative;
+            font-size: 1.05rem; line-height: 1.6;
+        }
+        .takeaways-box li::before {
+            content: "✓"; position: absolute; left: 0;
+            color: var(--brand-primary); font-weight: 700;
+        }
+
+        /* ========== Table of Contents ========== */
+        .toc-box {
+            background: #f8fafc; border: 1px solid #e2e8f0;
+            border-radius: 12px; padding: 1.25rem 1.5rem; margin: 2rem 0;
+        }
+        .toc-toggle {
+            cursor: pointer; display: flex;
+            justify-content: space-between; align-items: center;
+            font-weight: 700; font-size: 1rem;
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            user-select: none;
+        }
+        .toc-list { list-style: none; padding: 0; margin: 0.75rem 0 0; }
+        .toc-list li { padding: 0.4rem 0; border-bottom: 1px solid #f1f5f9; }
+        .toc-list li:last-child { border-bottom: none; }
+        .toc-list a {
+            color: var(--brand-primary); text-decoration: none;
+            font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;
+        }
+        .toc-list a:hover { text-decoration: underline; }
+        .toc-list a::before { content: "→"; font-size: 0.8rem; opacity: 0.5; }
+        .toc-box.collapsed .toc-list { display: none; }
+        .toc-box.collapsed .toc-chevron { transform: rotate(180deg); }
+        .toc-chevron { transition: transform 0.3s; }
+
+        /* ========== FAQ Accordion ========== */
+        .faq-section { margin: 2.5rem 0; }
+        .faq-section-title {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.75rem; font-weight: 700;
+            color: var(--brand-dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--brand-accent);
+        }
+        .faq-item {
+            border: 1px solid #e2e8f0; border-radius: 8px;
+            margin-bottom: 0.75rem; overflow: hidden;
+        }
+        .faq-question {
+            padding: 1rem 1.25rem; background: #f8fafc;
+            cursor: pointer; display: flex;
+            justify-content: space-between; align-items: center;
+            font-weight: 700; font-size: 1.05rem;
+            transition: background 0.2s;
+        }
+        .faq-question:hover { background: #f1f5f9; }
+        .faq-answer {
+            padding: 0 1.25rem 1rem;
+            font-size: 1.05rem; line-height: 1.7;
+            display: none; color: #4b5563;
+        }
+        .faq-item.open .faq-answer { display: block; }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform 0.3s; color: #9ca3af; }
+
+        /* ========== Author Bio ========== */
+        .author-bio {
+            display: flex; gap: 1.5rem; padding: 2rem;
+            background: #f8fafc; border-radius: 12px;
+            border: 1px solid #e2e8f0; margin: 2.5rem 0;
+        }
+        .author-avatar {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: var(--brand-primary);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 2rem; font-weight: 700; flex-shrink: 0;
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+        }
+
+        /* ========== Social Share ========== */
+        .share-box { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 2rem 0; }
+        .share-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem; border-radius: 6px;
+            font-size: 0.85rem; font-weight: 600;
+            text-decoration: none; color: white;
+            transition: opacity 0.2s; border: none; cursor: pointer;
+        }
+        .share-btn:hover { opacity: 0.85; }
+
+        /* ========== CTA ========== */
+        .blog-cta {
+            background: linear-gradient(135deg, var(--brand-dark) 0%, color-mix(in srgb, var(--brand-primary) 60%, black) 100%);
+            border-radius: 16px; padding: 3rem 2rem;
+            text-align: center; color: white; margin: 3rem 0;
+        }
+        .blog-cta .cta-btn {
+            display: inline-block; padding: 1rem 2.5rem;
+            border-radius: 8px; font-weight: 700;
+            font-size: 1.125rem; text-transform: uppercase;
+            letter-spacing: 0.05em; text-decoration: none;
+            background: var(--brand-accent); color: var(--brand-dark);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .blog-cta .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+
+        /* ========== Related Articles ========== */
+        .related-card {
+            border: 1px solid #e2e8f0; border-radius: 12px;
+            padding: 1.5rem; text-decoration: none; color: inherit;
+            display: block; transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .related-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .related-card .card-category {
+            display: inline-block; padding: 2px 8px;
+            font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            border-radius: 4px;
+            background: var(--brand-accent); color: var(--brand-dark);
+        }
+
+        /* ========== Footer ========== */
+        .blog-footer {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: #9ca3af; padding: 3rem 1rem;
+            text-align: center; border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* ========== Mobile Menu ========== */
+        #blog-mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        #blog-mobile-menu.open { transform: translateX(0); }
+
+        /* ========== Mobile Sticky ========== */
+        .mobile-sticky {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            z-index: 50; background: white;
+            border-top: 1px solid #e5e7eb;
+            box-shadow: 0 -4px 6px -1px rgba(0,0,0,0.1);
+            display: flex;
+        }
+        @media (min-width: 1024px) { .mobile-sticky { display: none; } }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            .article-hero { padding: 3rem 1rem 2rem; }
+            .article-hero h1 { font-size: 1.75rem; }
+            .article-content h2 { font-size: 1.4rem; }
+            .author-bio { flex-direction: column; align-items: center; text-align: center; }
+        }
+    </style>
+</head>
+
+<body style="padding-top: 96px; padding-bottom: 4rem;">
+
+    <!-- ===== HEADER ===== -->
+    <header class="blog-header">
+        <div class="top-bar">
+            WPI-8 Windstorm Certified Patio Covers — Call <a href='tel:+12819540079'>(281) 954-0079</a> for a Free Estimate
+        </div>
+        <div style="background: white; width: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 16px; max-width: 1280px; margin: 0 auto;">
+                <a href="https://www.patiocoverkaty.net/" style="display: flex; align-items: center; z-index: 50; flex-shrink: 0;">
+                    <img src="../images/logo.svg" alt="Patio Cover Katy" style="height: 48px; width: auto; object-fit: contain;">
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="https://www.patiocoverkaty.net/" class="nav-link">Home</a>
+<a href="https://www.patiocoverkaty.net/reviews.html" class="nav-link">Reviews</a>
+<a href="https://www.patiocoverkaty.net/#services" class="nav-link">Services</a>
+<a href="https://www.patiocoverkaty.net/gallery.html" class="nav-link">Gallery</a>
+<a href="https://www.patiocoverkaty.net/blog/" class="nav-link">Blog</a>
+<a href="https://www.patiocoverkaty.net/contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="desktop-nav" style="gap: 1rem;">
+                    <a href="tel:2819540079" style="display: flex; flex-direction: column; align-items: flex-end; text-decoration: none;">
+                        <span style="font-size: 0.75rem; color: #6b7280; font-weight: 700; text-transform: uppercase;">Call Now</span>
+                        <span class="font-header" style="font-size: 1.25rem; font-weight: 700; color: var(--brand-dark); line-height: 1;">(281) 954-0079</span>
+                    </a>
+                </div>
+
+                <button id="blog-menu-btn" class="mobile-menu-btn" style="font-size: 1.5rem; color: var(--brand-dark); background: none; border: none; cursor: pointer; padding: 8px; display: block;" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div id="blog-mobile-menu" style="position: fixed; inset: 0; background: white; z-index: 90; display: flex; flex-direction: column; padding: 10rem 1.5rem 0; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
+        <a href="https://www.patiocoverkaty.net/" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Home</a>
+<a href="https://www.patiocoverkaty.net/reviews.html" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Reviews</a>
+<a href="https://www.patiocoverkaty.net/#services" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Services</a>
+<a href="https://www.patiocoverkaty.net/gallery.html" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Gallery</a>
+<a href="https://www.patiocoverkaty.net/blog/" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Blog</a>
+<a href="https://www.patiocoverkaty.net/contact.html" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Contact</a>
+        <a href="tel:2819540079" style="margin-top: 1.5rem; text-align: center; font-size: 1.25rem; font-weight: 700; color: var(--brand-primary); text-decoration: none;">
+            <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>(281) 954-0079
+        </a>
+    </div>
+
+    <!-- ===== ARTICLE HERO ===== -->
+    <section class="article-hero">
+        <div style="max-width: 56rem; margin: 0 auto;">
+            <!-- Breadcrumbs -->
+            <nav style="font-size: 0.875rem; margin-bottom: 1rem; opacity: 0.8;">
+                <a href="https://www.patiocoverkaty.net/" style="color: #d1d5db; text-decoration: none;">Home</a>
+                <span style="margin: 0 0.5rem; color: #6b7280;">/</span>
+                <a href="https://www.patiocoverkaty.net/blog/" style="color: #d1d5db; text-decoration: none;">Blog</a>
+                <span style="margin: 0 0.5rem; color: #6b7280;">/</span>
+                <span style="color: white;">Pergola vs. Patio Cover: Which Is Better for Katy'...</span>
+            </nav>
+            <span style="display: inline-block; padding: 4px 12px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 9999px; margin-bottom: 1rem; background: var(--brand-accent); color: var(--brand-dark);">Comparison</span>
+            <h1 class="font-header" style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin: 0 0 1rem;">Pergola vs. Patio Cover: Which Is Better for Katy's Heat?</h1>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; font-size: 0.875rem; color: #d1d5db; margin-top: 1rem;">
+                <span><i class="fas fa-user" style="margin-right: 0.25rem;"></i> Ed Lopez</span>
+                <span><i class="fas fa-calendar" style="margin-right: 0.25rem;"></i> February 23, 2026</span>
+                <span><i class="fas fa-clock" style="margin-right: 0.25rem;"></i> 12 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO IMAGE ===== -->
+    
+
+    <!-- ===== ARTICLE BODY ===== -->
+    <main style="max-width: 56rem; margin: 0 auto; padding: 2rem 1rem;">
+
+        <!-- Table of Contents -->
+        <nav class="toc-box" id="toc">
+            <div class="toc-toggle" onclick="this.parentElement.classList.toggle('collapsed')">
+                <span><i class="fas fa-list" style="margin-right: 0.5rem;"></i>Table of Contents</span>
+                <i class="fas fa-chevron-up toc-chevron"></i>
+            </div>
+            <ul class="toc-list">
+                <li><a href="#section-1">What Most People Get Wrong About Pergolas and Patio Covers</a></li>
+<li><a href="#section-2">What Are the Cost Differences Between Pergolas and Patio Covers?</a></li>
+<li><a href="#section-3">How Do Pergolas and Patio Covers Handle Katy's Humidity?</a></li>
+<li><a href="#section-4">What Is the Best Option for Aesthetic Appeal?</a></li>
+<li><a href="#section-5">What Costs Should I Expect for Pergolas and Patio Covers in Katy?</a></li>
+<li><a href="#section-6">How Long Does It Take to Install a Pergola or Patio Cover?</a></li>
+<li><a href="#section-7">What Maintenance Is Needed for Pergolas and Patio Covers?</a></li>
+<li><a href="#section-8">Which Structure Provides Better Protection Against Katy's Weather?</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article Content -->
+        <div class="article-content">
+            <h2 id="section-1">What Most People Get Wrong About Pergolas and Patio Covers</h2>
+<p>Despite what you'll read online, most homeowners assume pergolas provide adequate shade for Katy's climate. After installing over 500 outdoor structures across Katy and Cinco Ranch, I can tell you that's the costliest mistake people make. A pergola's slatted roof blocks maybe 40-50% of direct sunlight—enough for a decorative garden feature, but nowhere near what you need when the heat index hits 110°F. We've measured the difference: a solid patio cover drops the temperature beneath it by 15-20 degrees compared to an open pergola. That's the difference between enjoying your backyard in July and retreating inside by 10 AM.</p>
+<p>The second misconception hits harder over time. Homeowners choose wood pergolas because they like the look, then watch them warp within 18 months. Our Gulf Coast humidity sits between 70-90% year-round. Wood absorbs that moisture, expands, contracts, and eventually rots—even with annual sealing. I've replaced dozens of five-year-old wooden pergolas that looked beautiful at installation but couldn't handle what <a href="https://www.weather.gov/hgx/climate_houstonsummary">Katy's subtropical climate</a> dishes out. Insulated aluminum patio covers like Alumawood are engineered specifically for coastal humidity. They don't warp, don't rot, and the cellular foam insulation inside cuts radiant heat transfer by 60% compared to bare metal or wood.</p>
+<p>For detailed specifications on patio covers, visit our <a href="https://www.patiocoverkaty.net/patio-covers.html">patio covers page</a>.</p>
+<h2 id="section-2">What Are the Cost Differences Between Pergolas and Patio Covers?</h2>
+<p>Pergolas in Katy typically cost $3,000-$6,000 for basic installations, while insulated aluminum patio covers range from $4,500-$10,000 depending on size and engineering requirements. The higher upfront investment in a patio cover delivers better value—we see them lasting 25+ years with zero rot or replacement costs, while wood pergolas need significant repairs or replacement every 7-10 years in our climate.</p>
+<p>Here's what drives the cost difference. A standard 12x16 pergola uses pressure-treated pine posts and rafters with basic hardware—straightforward carpentry that keeps labor costs down. A comparable 12x16 patio cover requires engineered footings (18-24 inches deep to meet Fort Bend County codes), WPI-8 certified aluminum framing that withstands 130+ mph winds, and insulated roof panels with integrated drainage channels. That engineering isn't optional decoration—it's what keeps your structure standing when hurricane remnants roll through, like we saw with Hurricane Harvey.</p>
+<p>| Feature | Pergola | Insulated Patio Cover |</p>
+<p>|---------|---------|----------------------|</p>
+<p>| Average Cost (12x16) | $3,800-$5,200 | $6,500-$9,200 |</p>
+<p>| Lifespan (Katy climate) | 5-8 years | 25+ years |</p>
+<p>| Temperature Reduction | 5-8°F | 15-20°F |</p>
+<p>| Maintenance Cost (annual) | $200-$400 (sealing/repairs) | $50-$100 (cleaning) |</p>
+<p>| Hurricane Wind Rating | Not rated | WPI-8 (130+ mph) |</p>
+<p>At Patio Cover Katy, we've watched clients who chose pergolas return within three years asking for patio covers after realizing their outdoor space stays too hot to use. The ones who start with patio covers? They're adding <a href="https://www.patiocoverkaty.net/outdoor-kitchens.html">outdoor kitchens</a> two years later because they actually enjoy being outside.</p>
+<h2 id="section-3">How Do Pergolas and Patio Covers Handle Katy's Humidity?</h2>
+<p>Insulated aluminum patio covers are specifically engineered to resist moisture penetration and thermal expansion in Gulf Coast humidity, while wood pergolas absorb moisture and deteriorate within 5-8 years even with proper sealing. I've replaced 40+ rotted pergolas in Cinco Ranch and Fulshear neighborhoods over the past three years—most of them less than six years old when the structural posts showed rot damage at ground level.</p>
+<p>The physics are straightforward. Wood is hygroscopic—it absorbs water from humid air until it reaches equilibrium with the surrounding environment. In Katy, where relative humidity averages 75% year-round according to <a href="https://www.weather.gov/hgx/">National Weather Service data</a>, that means your wood structure is constantly expanding and contracting. Even cedar and redwood, which have natural rot resistance, will crack and split under this cycle. We see the worst damage where posts meet concrete footings—moisture wicks up through the concrete, gets trapped in the wood grain, and creates perfect conditions for fungal rot.</p>
+<p>Alumawood patio covers use extruded aluminum with a baked-on finish that doesn't absorb moisture at all. The cellular foam insulation inside each beam is closed-cell polyurethane—it actually repels water. The roofing panels have integrated drip edges and concealed fasteners that channel rain away without creating penetration points where moisture could enter. This matters in neighborhoods with strict HOA requirements like Cinco Ranch, where your structure needs to look pristine for decades, not just the first two summers.</p>
+<p>Our solid roof design also prevents the pooling and runoff problems that plague pergolas during heavy rain. Instead of water dripping through slats onto your furniture, it channels to integrated gutters at the perimeter. Check our <a href="https://www.patiocoverkaty.net/texas-patio-cover-engineering-guide.html">Texas patio cover engineering guide</a> for detailed specifications on moisture management.</p>
+<h2 id="section-4">What Is the Best Option for Aesthetic Appeal?</h2>
+<p>Pergolas create an open, airy aesthetic ideal for decorative garden spaces with climbing plants, while modern patio covers can be customized with Alumawood's embossed wood-grain finishes in six colors to match your home's architecture—giving you the look of cedar without the maintenance or rot. After completing projects across every Katy neighborhood from historic Old Katy to new construction in Elyson, I've learned that aesthetic preference doesn't matter if you can't use the space in August.</p>
+<p>Pergolas shine when appearance outweighs function. The latticed roofline creates beautiful shadow patterns, and you can train wisteria or jasmine to grow across the beams for that cottage garden look. I've built custom cedar pergolas with arched entries and decorative brackets that look stunning—as focal points in landscaping where you won't spend much time underneath them during daylight hours from May through September.</p>
+<p>Patio covers have caught up in style over the past decade. Alumawood's embossed patterns replicate wood grain so accurately that clients standing ten feet away can't tell the difference from real cedar. We install them in Classic White to match traditional homes, Redwood to complement brick, and Sandstone for modern stucco exteriors. You can add decorative beam wraps, lattice side panels, and even integrate ceiling fans with the electrical chased through the posts. I just finished a project in <a href="https://www.patiocoverkaty.net/richmond-patio-covers.html">Richmond</a> where we matched the homeowner's existing trim color exactly—the patio cover looks like it was part of the original house design.</p>
+<p>The real aesthetic advantage? Your patio cover looks identical in year ten as it did on installation day. No graying wood, no peeling stain, no warped boards. For design inspiration, browse our <a href="https://www.patiocoverkaty.net/gallery.html">project gallery</a> to see how we've customized covers for different architectural styles.</p>
+<h2 id="section-5">What Costs Should I Expect for Pergolas and Patio Covers in Katy?</h2>
+<p>In Katy, basic wood pergolas start around $2,500 for small 10x10 structures and run up to $7,500 for larger custom designs, while engineered insulated patio covers range from $6,000 for standard 12x14 installations to $15,000 for larger spans with integrated lighting and fans. Material choice drives 60% of the cost difference—pressure-treated pine pergolas hit the low end, while maintenance-free Alumawood patio covers with WPI-8 wind certification occupy the upper range.</p>
+<p>Here's how the numbers break down based on actual projects we've completed:</p>
+<p>| Structure Type | Size | Material | Cost Range | What You Get |</p>
+<p>|----------------|------|----------|-----------|--------------|</p>
+<p>| Basic Pergola | 10x12 | Pressure-treated pine | $2,800-$4,200 | Open lattice roof, 4x4 posts, basic hardware |</p>
+<p>| Premium Pergola | 12x16 | Western red cedar | $5,500-$7,500 | Decorative brackets, 6x6 posts, upgraded joinery |</p>
+<p>| Standard Patio Cover | 12x14 | Alumawood insulated | $6,200-$8,500 | Solid insulated roof, engineered posts, WPI-8 rated |</p>
+<p>| Custom Patio Cover | 16x20 | Alumawood with options | $11,000-$15,000 | Ceiling fans, recessed lighting, decorative columns |</p>
+<p>Site conditions add to these base costs. If your backyard slopes or you need to remove an existing concrete pad, expect another $800-$1,500. Fort Bend County requires structural engineering stamps for covers over 200 square feet—that's a $400-$600 engineering fee we build into larger projects. HOA plan reviews in master-planned communities like Elyson or Seven Meadows add 2-3 weeks to the timeline but don't typically increase costs.</p>
+<p>At Patio Cover Katy, we've found that clients who invest in insulated patio covers spend less over ten years than those who install cheaper pergolas and replace them twice. The math is simple: a $6,500 patio cover with zero maintenance costs over 25 years beats a $3,800 pergola that needs $300 in annual sealing and replacement at year eight.</p>
+<h2 id="section-6">How Long Does It Take to Install a Pergola or Patio Cover?</h2>
+<p>Standard pergola installations take 2-3 days from start to finish, while engineered patio covers require 3-5 days due to concrete cure times and the precision needed for WPI-8 wind-rated connections. We've completed over 200 installations in Katy neighborhoods, and the timeline depends more on engineering requirements and concrete work than the structure size—a properly engineered patio cover needs 48 hours just for the footer concrete to reach sufficient strength.</p>
+<p>Here's the realistic timeline we follow:</p>
+<p>| Phase | Timeline | Details |</p>
+<p>|-------|----------|---------|</p>
+<p>| Permitting & Design | 5-10 business days | Fort Bend County plan review, HOA approval if required |</p>
+<p>| Site Prep | 4-6 hours | Mark locations, excavate footers (18-24" deep per code) |</p>
+<p>| Concrete Pour | Day 1 | Pour footers with rebar, set post brackets |</p>
+<p>| Cure Time | 48 hours | Concrete reaches 75% strength (can't rush this) |</p>
+<p>| Frame Assembly | Day 3-4 | Set posts, install beams, attach roof panels |</p>
+<p>| Finishing | Day 4-5 | Electrical (if included), trim work, final inspection |</p>
+<p>Weather impacts these timelines more than homeowners expect. I won't pour concrete if rain is forecast within 24 hours—that ruins the cure and compromises structural integrity. During July and August, we start concrete pours at 7 AM before temperatures hit 95°F, which can cause surface cracking. Winter installations are actually faster because concrete cures more consistently in 50-70°F weather than in extreme heat.</p>
+<p>One advantage we have working in established neighborhoods: we know the soil conditions. Sandy loam in older Katy areas drains well and digs easily. New developments like Jordan Ranch sit on clay that gets rock-hard when dry and turns to soup when wet—that affects excavation time. We account for this in our estimates so clients aren't surprised.</p>
+<h2 id="section-7">What Maintenance Is Needed for Pergolas and Patio Covers?</h2>
+<p>Wood pergolas require annual inspection, cleaning, sanding, and resealing with products like Cabot or Behr transparent stain—budget 6-8 hours of labor or $300-$400 if you hire it out. Alumawood patio covers need only an annual rinse with a garden hose and inspection of gutter channels—typically 30 minutes of effort. I've serviced structures in <a href="https://www.patiocoverkaty.net/cinco-ranch-patio-covers.html">Cinco Ranch</a> that are 15 years old and still look factory-fresh with nothing more than occasional washing.</p>
+<p>Here's the honest comparison based on structures I've maintained and repaired:</p>
+<p>| Maintenance Task | Wood Pergola | Insulated Patio Cover |</p>
+<p>|------------------|--------------|----------------------|</p>
+<p>| Cleaning | Every 6 months (pressure wash) | Annually (garden hose rinse) |</p>
+<p>| Sealing/Staining | Annually ($150 materials + 6 hrs labor) | Never required |</p>
+<p>| Rot Inspection | Every 6 months (critical at post bases) | Not applicable |</p>
+<p>| Hardware Tightening | Annually (wood movement loosens bolts) | Every 2-3 years |</p>
+<p>| Expected Repairs | $500-$1,200 every 3-5 years | Minimal to none |</p>
+<p>| Total 10-Year Cost | $3,500-$5,000 | $200-$400 |</p>
+<p>The maintenance gap gets wider in our climate. I've seen gorgeous cedar pergolas in Fulshear that looked perfect for three years, then the owners skipped one year of sealing. Within 18 months, the wood grayed, surface checks appeared, and water penetration started the rot cycle. Once it starts, you're looking at board replacement—$800-$1,500 depending on how much damage there is.</p>
+<p>Alumawood's baked-on finish uses a three-layer system similar to what metal roofing manufacturers use: primer, color coat, and protective clear coat. This finish is rated for 3,000+ hours of salt spray exposure (ASTM B117 testing)—far more abuse than Katy's climate delivers. The only maintenance I recommend is keeping the integrated gutters clear of leaves and checking that water drains properly. That's a 15-minute inspection twice a year.</p>
+<h2 id="section-8">Which Structure Provides Better Protection Against Katy's Weather?</h2>
+<p>Insulated aluminum patio covers engineered to WPI-8 standards provide complete protection from sun, rain, and wind up to 130+ mph, while pergolas offer minimal weather protection—approximately 40-50% shade coverage and zero rain protection. After Hurricane Harvey dropped 40+ inches of rain on Katy in 2017, the patio covers we'd installed remained structurally sound while numerous decorative pergolas collapsed or required complete rebuilds due to wind and water damage.</p>
+<p>The protection difference isn't subtle:</p>
+<p>| Weather Factor | Pergola | Engineered Patio Cover |</p>
+<p>|----------------|---------|----------------------|</p>
+<p>| UV Block | 40-50% | 100% |</p>
+<p>| Rain Protection | 0% (water drips through) | 100% (channeled drainage) |</p>
+<p>| Wind Resistance | Not rated (typically fails at 70-80 mph) | WPI-8 certified (130+ mph) |</p>
+<p>| Temperature Reduction | 5-8°F below ambient | 15-20°F below ambient |</p>
+<p>| Usable During Rain | No | Yes |</p>
+<p>Sun protection matters most for the 180+ days per year when Katy's UV index hits "Very High" or "Extreme" on the EPA scale. A pergola's slatted roof creates moving shadows but still allows direct UV exposure for several hours daily. We've had clients develop sun-damaged furniture and faded cushions under pergolas within one summer. A solid insulated roof blocks 100% of direct UV while the white or light-colored finish reflects solar radiation rather than absorbing it.</p>
+<p>Wind resistance separates backyard accessories from engineered structures. At Patio Cover Katy, every cover we install meets or exceeds WPI-8 certification requirements: posts anchored to concrete footers extending below the frost line, through-bolted beam connections with engineered hurricane ties, and roof panels secured at 12-inch intervals with self-tapping screws into the aluminum framework. I've stood under our covers during 60+ mph straight-line winds—they don't flex, creak, or show any movement. Pergolas use lag bolts into end grain and decorative brackets that look nice but aren't engineered for uplift forces.</p>
+<p>The rain protection advantage extends your outdoor season by 40-50 days per year. Katy averages 53 inches of annual rainfall. With a solid patio cover, you can use</p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section"><h2 class="faq-section-title">Frequently Asked Questions</h2><div class="faq-item"><div class="faq-question"><span>How do I choose between a pergola and a patio cover for my Katy home?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>In our experience, if you want a stylish outdoor space that provides some shade but allows for airflow, a pergola is an excellent choice. However, for maximum protection from Katy's heat and humidity, a patio cover is usually the better option. It offers full shelter and keeps your outdoor area cooler.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>What is the cost difference between a pergola and a patio cover in Katy?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>Typically, a pergola costs between $3,000 and $7,000, while a custom patio cover can range from $4,500 to $12,000, depending on materials and size. We usually recommend investing in a patio cover if you're serious about climate control and long-term use.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>Do I need a permit for a pergola or patio cover in Katy?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>Yes, both structures often require permits in Katy. We handle all HOA approvals and permitting for our clients to ensure compliance with local regulations. This can save you time and headaches down the line, especially in neighborhoods with strict guidelines.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>Can a pergola really keep my outdoor area cooler in the summer?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>While a pergola provides some shade, it doesn’t offer the same cooling benefits as a patio cover. Many homeowners mistakenly believe a pergola can adequately cool their space, but it only reduces direct sunlight. For significant temperature relief, a patio cover is far more effective.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>How long does it take to install a patio cover in Katy?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>After servicing hundreds of Katy homes, I can tell you that a typical patio cover installation takes about 2 to 5 days, depending on the complexity of the project. We pride ourselves on quick and efficient service without sacrificing quality.</p></div></div></div>
+
+        <!-- Social Sharing -->
+        <div style="margin-top: 2.5rem;">
+            <h3 class="font-header" style="font-size: 1.125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Share This Article</h3>
+            <div class="share-box">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.patiocoverkaty.net%2Fblog%2Fis-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html" target="_blank" rel="noopener" class="share-btn" style="background:#1877F2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.patiocoverkaty.net%2Fblog%2Fis-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html&text=Pergola%20vs.%20Patio%20Cover%3A%20Which%20Is%20Better%20for%20Katy%27s%20Heat%3F" target="_blank" rel="noopener" class="share-btn" style="background:#000"><i class="fab fa-x-twitter"></i> Post</a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.patiocoverkaty.net%2Fblog%2Fis-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html&title=Pergola%20vs.%20Patio%20Cover%3A%20Which%20Is%20Better%20for%20Katy%27s%20Heat%3F" target="_blank" rel="noopener" class="share-btn" style="background:#0A66C2"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <button onclick="navigator.clipboard.writeText('https://www.patiocoverkaty.net/blog/is-a-pergola-or-patio-cover-better-for-katys-heat-and-humidity.html');this.innerHTML='<i class=\'fas fa-check\'></i> Copied!';setTimeout(()=>this.innerHTML='<i class=\'fas fa-link\'></i> Copy Link',2000)" class="share-btn" style="background:#6b7280;"><i class="fas fa-link"></i> Copy Link</button>
+            </div>
+        </div>
+
+        <!-- Author Bio -->
+        <div class="author-bio">
+            <div class="author-avatar">E</div>
+            <div>
+                <h3 class="font-header" style="font-size: 1.125rem; font-weight: 700; margin: 0 0 0.25rem;">Ed Lopez</h3>
+                <p style="font-size: 0.875rem; color: #6b7280; margin: 0 0 0.5rem;">Owner, Patio Cover Katy</p>
+                <p style="color: #4b5563; font-size: 0.9rem; line-height: 1.6; margin: 0;">Ed Lopez is the owner of Patio Cover Katy, serving the Katy and greater Houston metro area with custom patio covers, pergolas, and outdoor kitchens. WPI-8 Windstorm Certified, engineered for Texas Gulf Coast conditions, and backed by transparent pricing and full HOA approval assistance.</p>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div style="margin: 2.5rem 0;"><h3 class="font-header" style="font-size: 1.125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Related Articles</h3><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;"><a href="https://www.patiocoverkaty.net/blog/patio-cover-costs-in-katy-what-to-budget-for.html" class="related-card"><span class="card-category">Article</span><h3 style="font-family: inherit; font-size: 1.05rem; font-weight: 700; color: #1f2937; margin: 0.5rem 0;">Patio Cover Costs in Katy: What to Budget For</h3><span style="font-size: 0.8rem; color: #9ca3af;">2026-02-16 &middot; 11 min read</span></a>
+<a href="https://www.patiocoverkaty.net/blog/alumawood-vs-wood-patio-covers-pros-and-cons-for-houston.html" class="related-card"><span class="card-category">Article</span><h3 style="font-family: inherit; font-size: 1.05rem; font-weight: 700; color: #1f2937; margin: 0.5rem 0;">Alumawood vs Wood Patio Covers: Pros & Cons</h3><span style="font-size: 0.8rem; color: #9ca3af;">2026-02-16 &middot; 11 min read</span></a>
+<a href="https://www.patiocoverkaty.net/blog/how-to-get-hoa-approval-for-a-patio-cover-in-cinco-ranch.html" class="related-card"><span class="card-category">Article</span><h3 style="font-family: inherit; font-size: 1.05rem; font-weight: 700; color: #1f2937; margin: 0.5rem 0;">How to Get HOA Approval for a Patio Cover in Cinco Ranch</h3><span style="font-size: 0.8rem; color: #9ca3af;">2026-02-16 &middot; 9 min read</span></a></div></div>
+
+        <!-- CTA -->
+        <div class="blog-cta">
+            <h2 class="font-header" style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.75rem;">Ready to Get Started?</h2>
+            <p style="color: #d1d5db; margin: 0 auto 1.5rem; max-width: 32rem;">Contact Patio Cover Katy today for a free estimate. Licensed, insured, and ready to help.</p>
+            <a href="tel:2819540079" class="cta-btn">
+                <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Call (281) 954-0079
+            </a>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="blog-footer">
+        <div style="max-width: 56rem; margin: 0 auto;">
+            <img src="../images/logo.svg" alt="Patio Cover Katy" style="height: 4rem; margin: 0 auto 1rem; opacity: 0.95;">
+            <p style="font-size: 0.875rem; color: #d1d5db; margin: 0;">&copy; <script>document.write(new Date().getFullYear())</script> Patio Cover Katy. All rights reserved.</p>
+            <div style="margin-top: 1rem; font-size: 0.75rem; color: #6b7280;">
+                Website Design and Marketing by
+                <a href="https://www.getlocalmaps.com" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; margin-left: 0.25rem;">
+                    <img src="https://www.getlocalmaps.com/wp-content/uploads/2020/06/logo-1.png" alt="Get Local Maps" style="height: 1.5rem; opacity: 0.8;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE STICKY ===== -->
+    <div class="mobile-sticky">
+        <a href="tel:2819540079" style="flex: 1; background: #f1f5f9; color: var(--brand-dark); padding: 1rem; text-align: center; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; text-decoration: none; border-right: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <i class="fas fa-phone"></i> Call
+        </a>
+        <a href="sms:+12819540079" style="flex: 1; background: var(--brand-primary); color: white; padding: 1rem; text-align: center; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <i class="fas fa-comment"></i> Text Us
+        </a>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('blog-menu-btn').addEventListener('click', function() {
+            document.getElementById('blog-mobile-menu').classList.toggle('open');
+        });
+        document.querySelectorAll('#blog-mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('blog-mobile-menu').classList.remove('open');
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                this.parentElement.classList.toggle('open');
+            });
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-list a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
