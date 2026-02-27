@@ -160,6 +160,13 @@
       </p>
 
       <form id="lead-form" class="form-grid">
+        <!-- Honeypot — hidden from humans, bots auto-fill it -->
+        <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="hidden" id="form-loaded" name="_loaded" value="" />
+
         <div>
           <label for="name">Your Name *</label>
           <input type="text" id="name" name="name" autocomplete="name" required />
@@ -295,6 +302,9 @@
   const statusEl = document.getElementById("form-status");
 
   if (form && statusEl) {
+    // Record page load time for bot timing detection
+    document.getElementById("form-loaded").value = Date.now().toString();
+
     form.addEventListener("submit", async function (e) {
       e.preventDefault();
       statusEl.style.display = "none";
@@ -304,7 +314,9 @@
         name: form.name.value.trim(),
         phone: form.phone.value.trim(),
         email: form.email.value.trim(),
-        message: form.message.value.trim()
+        message: form.message.value.trim(),
+        website: form.website.value,
+        _loaded: form._loaded.value
       };
 
       try {
