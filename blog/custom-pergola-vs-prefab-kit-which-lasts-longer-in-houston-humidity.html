@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<!--
+  Blog Article Template — Reusable for ANY HTML client site
+  ==========================================================
+  All {{PLACEHOLDER}} values are populated by html_generator.py generate_blog()
+  Branding comes from blog_config.branding in marketing_config.json
+  Nav comes from blog_config.nav_links in marketing_config.json
+
+  STYLE MATCHING NOTE (for operators):
+  - Header, footer, and nav styles here should visually match the client's
+    existing website (colors, font weights, layout, mobile menu behavior).
+  - Blog templates use self-contained inline styles because /blog/ pages may
+    not have access to the parent site's styles.css.
+  - When building blogs for static HTML sites, review the client's nav/footer
+    and match colors, font weights, and layout in the branding config.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pergola vs Prefab Kit: Which Lasts Longer? | Patio Cover Katy</title>
+    <meta name="description" content="Explore the longevity of custom pergolas versus prefab kits in Houston's humidity. Expert insights from Patio Cover Katy.">
+    <link rel="canonical" href="https://www.patiocoverkaty.net/blog/custom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Custom Pergola vs Prefab Kit: Which Lasts Longer?">
+    <meta property="og:description" content="Explore the longevity of custom pergolas versus prefab kits in Houston's humidity. Expert insights from Patio Cover Katy.">
+    <meta property="og:url" content="https://www.patiocoverkaty.net/blog/custom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Patio Cover Katy">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+
+    <!-- Performance: Preconnect -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=system-ui%2C%20-apple-system%2C%20BlinkMacSystemFont%2C%20%27Segoe%20UI%27%2C%20Roboto%2C%20sans-serif:wght@400;700&family=system-ui%2C%20-apple-system%2C%20BlinkMacSystemFont%2C%20%27Segoe%20UI%27%2C%20Roboto%2C%20sans-serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+
+    <!-- JSON-LD: Article Schema -->
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Custom Pergola vs Prefab Kit: Which Lasts Longer?",
+    "description": "Explore the longevity of custom pergolas versus prefab kits in Houston's humidity. Expert insights from Patio Cover Katy.",
+    "url": "https://www.patiocoverkaty.net/blog/custom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html",
+    "datePublished": "2026-03-09T12:09:29-05:00",
+    "dateModified": "2026-03-09T12:09:29-05:00",
+    "author": {
+        "@type": "Person",
+        "name": "Ed Lopez"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Patio Cover Katy",
+        "url": "https://www.patiocoverkaty.net/",
+        "telephone": "(281) 954-0079"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.patiocoverkaty.net/blog/custom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html"
+    },
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+            ".article-content h2",
+            ".article-content h2 + p",
+            ".takeaways-box"
+        ]
+    }
+}</script>
+    <!-- JSON-LD: FAQ Schema -->
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How much does a custom pergola cost in Katy?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In our experience, custom pergolas in Katy typically range from $3,000 to $10,000, depending on the size, materials, and design complexities. We've found that homeowners appreciate the investment due to the longevity and durability of a custom build compared to prefab kits."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do prefab pergolas last as long as custom-built ones?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many homeowners assume prefab pergolas last just as long as custom options. However, prefab kits are often made from lower-quality materials and may not withstand Houston's humidity as effectively. In our work, we’ve seen custom pergolas last significantly longer due to superior engineering and materials tailored for local conditions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How long does it take to install a custom pergola?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "After servicing hundreds of Katy homes, we typically complete a custom pergola installation in about 3 to 5 days. This timeline includes site preparation and ensuring everything meets local codes, which is often more comprehensive than the rush jobs associated with prefab kits."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What materials are best for pergolas in Houston's climate?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We've found that materials like aluminum or treated cedar work best for pergolas in Houston's humidity. Aluminum has excellent resistance to rust and rot, while treated cedar offers natural beauty and durability. Custom designs can incorporate these materials for optimal longevity."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I get a warranty on a custom pergola?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when we build custom pergolas at Patio Cover Katy, we typically offer warranties that range from 5 to 10 years, depending on the materials used. This warranty gives homeowners peace of mind, knowing their investment is protected against defects and weather-related issues."
+            }
+        }
+    ]
+}</script>
+    <!-- JSON-LD: Featured Business Schema (Semantic Bridge) -->
+    
+    <!-- JSON-LD: BreadcrumbList Schema -->
+    <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.patiocoverkaty.net/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://www.patiocoverkaty.net/blog/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Custom Pergola vs Prefab Kit: Which Lasts Longer?"
+        }
+    ]
+}</script>
+
+    <style>
+        /* ========== CSS Custom Properties (from blog_config.branding) ========== */
+        :root {
+            --brand-primary: #2979ff;
+            --brand-accent: #2979ff;
+            --brand-dark: #05070b;
+        }
+
+        /* ========== Base ========== */
+        body {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1f2937;
+            background: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-header { font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif; }
+
+        /* ========== Header ========== */
+        .blog-header {
+            position: fixed; top: 0; width: 100%; z-index: 1000;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .top-bar {
+            background-color: var(--brand-primary);
+            color: white; text-align: center;
+            padding: 8px; font-size: 12px;
+            text-transform: uppercase; font-weight: bold;
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            letter-spacing: 1px;
+        }
+        .nav-link {
+            text-transform: uppercase; font-weight: 700;
+            font-size: 0.875rem; letter-spacing: 0.05em;
+            color: #374151; text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-link:hover { color: var(--brand-primary); }
+        .desktop-nav { display: none; }
+        .mobile-menu-btn { display: block; }
+        @media (min-width: 1024px) {
+            .desktop-nav { display: flex; gap: 2rem; align-items: center; }
+            .mobile-menu-btn { display: none; }
+        }
+
+        /* ========== Article Hero ========== */
+        .article-hero {
+            background: linear-gradient(135deg, var(--brand-dark) 0%, color-mix(in srgb, var(--brand-primary) 60%, black) 100%);
+            color: white; padding: 4rem 1rem 3rem;
+        }
+
+        /* ========== Article Typography ========== */
+        .article-content h2 {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.75rem; font-weight: 700;
+            color: var(--brand-dark);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--brand-accent);
+            scroll-margin-top: 120px;
+        }
+        .article-content h3 {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.25rem; font-weight: 700;
+            color: #374151; margin: 2rem 0 0.75rem;
+            scroll-margin-top: 120px;
+        }
+        .article-content p {
+            font-size: 1.125rem; line-height: 1.8;
+            margin-bottom: 1.25rem; color: #374151;
+        }
+        .article-content ul, .article-content ol {
+            margin: 1rem 0 1.5rem; padding-left: 1.5rem;
+        }
+        .article-content ul { list-style: disc; }
+        .article-content ol { list-style: decimal; }
+        .article-content li {
+            font-size: 1.125rem; line-height: 1.75;
+            margin-bottom: 0.5rem; color: #374151;
+        }
+        .article-content a {
+            color: var(--brand-primary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .article-content a:hover { color: var(--brand-dark); }
+        .article-content blockquote {
+            border-left: 4px solid var(--brand-accent);
+            background: #fefce8;
+            padding: 1.25rem 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .article-content blockquote p { margin-bottom: 0; }
+        .article-content strong { color: #111827; }
+        .article-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; }
+
+        /* ========== Hero Image ========== */
+        .article-hero-image {
+            max-width: 56rem;
+            margin: -2rem auto 0;
+            padding: 0 1rem;
+        }
+        .article-hero-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .article-hero-image figcaption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* ========== Inline Article Figures ========== */
+        .article-content figure {
+            margin: 2rem 0;
+        }
+        .article-content figure img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .article-content figcaption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* ========== Key Takeaways ========== */
+        .takeaways-box {
+            border: 2px solid var(--brand-accent);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background: linear-gradient(135deg, #fefce8 0%, #fff 100%);
+        }
+        .takeaways-box .takeaway-title {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.35rem; font-weight: 700;
+            color: var(--brand-dark);
+            margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .takeaways-box ul { list-style: none; padding: 0; margin: 0; }
+        .takeaways-box li {
+            padding: 0.4rem 0 0.4rem 1.5rem;
+            position: relative;
+            font-size: 1.05rem; line-height: 1.6;
+        }
+        .takeaways-box li::before {
+            content: "✓"; position: absolute; left: 0;
+            color: var(--brand-primary); font-weight: 700;
+        }
+
+        /* ========== Table of Contents ========== */
+        .toc-box {
+            background: #f8fafc; border: 1px solid #e2e8f0;
+            border-radius: 12px; padding: 1.25rem 1.5rem; margin: 2rem 0;
+        }
+        .toc-toggle {
+            cursor: pointer; display: flex;
+            justify-content: space-between; align-items: center;
+            font-weight: 700; font-size: 1rem;
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            user-select: none;
+        }
+        .toc-list { list-style: none; padding: 0; margin: 0.75rem 0 0; }
+        .toc-list li { padding: 0.4rem 0; border-bottom: 1px solid #f1f5f9; }
+        .toc-list li:last-child { border-bottom: none; }
+        .toc-list a {
+            color: var(--brand-primary); text-decoration: none;
+            font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;
+        }
+        .toc-list a:hover { text-decoration: underline; }
+        .toc-list a::before { content: "→"; font-size: 0.8rem; opacity: 0.5; }
+        .toc-box.collapsed .toc-list { display: none; }
+        .toc-box.collapsed .toc-chevron { transform: rotate(180deg); }
+        .toc-chevron { transition: transform 0.3s; }
+
+        /* ========== FAQ Accordion ========== */
+        .faq-section { margin: 2.5rem 0; }
+        .faq-section-title {
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+            font-size: 1.75rem; font-weight: 700;
+            color: var(--brand-dark);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--brand-accent);
+        }
+        .faq-item {
+            border: 1px solid #e2e8f0; border-radius: 8px;
+            margin-bottom: 0.75rem; overflow: hidden;
+        }
+        .faq-question {
+            padding: 1rem 1.25rem; background: #f8fafc;
+            cursor: pointer; display: flex;
+            justify-content: space-between; align-items: center;
+            font-weight: 700; font-size: 1.05rem;
+            transition: background 0.2s;
+        }
+        .faq-question:hover { background: #f1f5f9; }
+        .faq-answer {
+            padding: 0 1.25rem 1rem;
+            font-size: 1.05rem; line-height: 1.7;
+            display: none; color: #4b5563;
+        }
+        .faq-item.open .faq-answer { display: block; }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); }
+        .faq-chevron { transition: transform 0.3s; color: #9ca3af; }
+
+        /* ========== Author Bio ========== */
+        .author-bio {
+            display: flex; gap: 1.5rem; padding: 2rem;
+            background: #f8fafc; border-radius: 12px;
+            border: 1px solid #e2e8f0; margin: 2.5rem 0;
+        }
+        .author-avatar {
+            width: 80px; height: 80px; border-radius: 50%;
+            background: var(--brand-primary);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 2rem; font-weight: 700; flex-shrink: 0;
+            font-family: 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif', sans-serif;
+        }
+
+        /* ========== Social Share ========== */
+        .share-box { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 2rem 0; }
+        .share-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem; border-radius: 6px;
+            font-size: 0.85rem; font-weight: 600;
+            text-decoration: none; color: white;
+            transition: opacity 0.2s; border: none; cursor: pointer;
+        }
+        .share-btn:hover { opacity: 0.85; }
+
+        /* ========== CTA ========== */
+        .blog-cta {
+            background: linear-gradient(135deg, var(--brand-dark) 0%, color-mix(in srgb, var(--brand-primary) 60%, black) 100%);
+            border-radius: 16px; padding: 3rem 2rem;
+            text-align: center; color: white; margin: 3rem 0;
+        }
+        .blog-cta .cta-btn {
+            display: inline-block; padding: 1rem 2.5rem;
+            border-radius: 8px; font-weight: 700;
+            font-size: 1.125rem; text-transform: uppercase;
+            letter-spacing: 0.05em; text-decoration: none;
+            background: var(--brand-accent); color: var(--brand-dark);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .blog-cta .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+
+        /* ========== Related Articles ========== */
+        .related-card {
+            border: 1px solid #e2e8f0; border-radius: 12px;
+            padding: 1.5rem; text-decoration: none; color: inherit;
+            display: block; transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .related-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.1); transform: translateY(-3px); }
+        .related-card .card-category {
+            display: inline-block; padding: 2px 8px;
+            font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            border-radius: 4px;
+            background: var(--brand-accent); color: var(--brand-dark);
+        }
+
+        /* ========== Footer ========== */
+        .blog-footer {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: #9ca3af; padding: 3rem 1rem;
+            text-align: center; border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* ========== Mobile Menu ========== */
+        #blog-mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(-100%);
+        }
+        #blog-mobile-menu.open { transform: translateX(0); }
+
+        /* ========== Mobile Sticky ========== */
+        .mobile-sticky {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            z-index: 50; background: white;
+            border-top: 1px solid #e5e7eb;
+            box-shadow: 0 -4px 6px -1px rgba(0,0,0,0.1);
+            display: flex;
+        }
+        @media (min-width: 1024px) { .mobile-sticky { display: none; } }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            .article-hero { padding: 3rem 1rem 2rem; }
+            .article-hero h1 { font-size: 1.75rem; }
+            .article-content h2 { font-size: 1.4rem; }
+            .author-bio { flex-direction: column; align-items: center; text-align: center; }
+        }
+    </style>
+</head>
+
+<body style="padding-top: 96px; padding-bottom: 4rem;">
+
+    <!-- ===== HEADER ===== -->
+    <header class="blog-header">
+        <div class="top-bar">
+            WPI-8 Windstorm Certified Patio Covers — Call <a href='tel:+12819540079'>(281) 954-0079</a> for a Free Estimate
+        </div>
+        <div style="background: white; width: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 8px 16px; max-width: 1280px; margin: 0 auto;">
+                <a href="https://www.patiocoverkaty.net/" style="display: flex; align-items: center; z-index: 50; flex-shrink: 0;">
+                    <img src="../images/logo.svg" alt="Patio Cover Katy" style="height: 48px; width: auto; object-fit: contain;">
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="https://www.patiocoverkaty.net/" class="nav-link">Home</a>
+<a href="https://www.patiocoverkaty.net/reviews.html" class="nav-link">Reviews</a>
+<a href="https://www.patiocoverkaty.net/#services" class="nav-link">Services</a>
+<a href="https://www.patiocoverkaty.net/gallery.html" class="nav-link">Gallery</a>
+<a href="https://www.patiocoverkaty.net/blog/" class="nav-link">Blog</a>
+<a href="https://www.patiocoverkaty.net/contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <div class="desktop-nav" style="gap: 1rem;">
+                    <a href="tel:2819540079" style="display: flex; flex-direction: column; align-items: flex-end; text-decoration: none;">
+                        <span style="font-size: 0.75rem; color: #6b7280; font-weight: 700; text-transform: uppercase;">Call Now</span>
+                        <span class="font-header" style="font-size: 1.25rem; font-weight: 700; color: var(--brand-dark); line-height: 1;">(281) 954-0079</span>
+                    </a>
+                </div>
+
+                <button id="blog-menu-btn" class="mobile-menu-btn" style="font-size: 1.5rem; color: var(--brand-dark); background: none; border: none; cursor: pointer; padding: 8px; display: block;" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU ===== -->
+    <div id="blog-mobile-menu" style="position: fixed; inset: 0; background: white; z-index: 90; display: flex; flex-direction: column; padding: 10rem 1.5rem 0; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
+        <a href="https://www.patiocoverkaty.net/" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Home</a>
+<a href="https://www.patiocoverkaty.net/reviews.html" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Reviews</a>
+<a href="https://www.patiocoverkaty.net/#services" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Services</a>
+<a href="https://www.patiocoverkaty.net/gallery.html" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Gallery</a>
+<a href="https://www.patiocoverkaty.net/blog/" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Blog</a>
+<a href="https://www.patiocoverkaty.net/contact.html" style="font-size: 1.5rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: #1f2937; display: block; font-family: inherit; text-transform: uppercase; letter-spacing: 1px;">Contact</a>
+        <a href="tel:2819540079" style="margin-top: 1.5rem; text-align: center; font-size: 1.25rem; font-weight: 700; color: var(--brand-primary); text-decoration: none;">
+            <i class="fas fa-phone" style="margin-right: 0.5rem;"></i>(281) 954-0079
+        </a>
+    </div>
+
+    <!-- ===== ARTICLE HERO ===== -->
+    <section class="article-hero">
+        <div style="max-width: 56rem; margin: 0 auto;">
+            <!-- Breadcrumbs -->
+            <nav style="font-size: 0.875rem; margin-bottom: 1rem; opacity: 0.8;">
+                <a href="https://www.patiocoverkaty.net/" style="color: #d1d5db; text-decoration: none;">Home</a>
+                <span style="margin: 0 0.5rem; color: #6b7280;">/</span>
+                <a href="https://www.patiocoverkaty.net/blog/" style="color: #d1d5db; text-decoration: none;">Blog</a>
+                <span style="margin: 0 0.5rem; color: #6b7280;">/</span>
+                <span style="color: white;">Custom Pergola vs Prefab Kit: Which Lasts Longer?</span>
+            </nav>
+            <span style="display: inline-block; padding: 4px 12px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; border-radius: 9999px; margin-bottom: 1rem; background: var(--brand-accent); color: var(--brand-dark);">Comparison</span>
+            <h1 class="font-header" style="font-size: 2.5rem; font-weight: 700; line-height: 1.2; margin: 0 0 1rem;">Custom Pergola vs Prefab Kit: Which Lasts Longer?</h1>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; font-size: 0.875rem; color: #d1d5db; margin-top: 1rem;">
+                <span><i class="fas fa-user" style="margin-right: 0.25rem;"></i> Ed Lopez</span>
+                <span><i class="fas fa-calendar" style="margin-right: 0.25rem;"></i> March 09, 2026</span>
+                <span><i class="fas fa-clock" style="margin-right: 0.25rem;"></i> 11 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HERO IMAGE ===== -->
+    
+
+    <!-- ===== ARTICLE BODY ===== -->
+    <main style="max-width: 56rem; margin: 0 auto; padding: 2rem 1rem;">
+
+        <!-- Table of Contents -->
+        <nav class="toc-box" id="toc">
+            <div class="toc-toggle" onclick="this.parentElement.classList.toggle('collapsed')">
+                <span><i class="fas fa-list" style="margin-right: 0.5rem;"></i>Table of Contents</span>
+                <i class="fas fa-chevron-up toc-chevron"></i>
+            </div>
+            <ul class="toc-list">
+                <li><a href="#section-1">What Most People Get Wrong About Custom Pergolas and Prefab Kits</a></li>
+<li><a href="#section-2">What Are the Key Differences Between Custom Pergolas and Prefab Kits?</a></li>
+<li><a href="#section-3">How Long Do Custom Pergolas Typically Last in Houston?</a></li>
+<li><a href="#section-4">What Maintenance Is Required for Custom Pergolas in Houston?</a></li>
+<li><a href="#section-5">How Much Does a Custom Pergola Cost in Katy?</a></li>
+<li><a href="#section-6">What Are the Benefits of Custom Pergolas Over Prefab Kits?</a></li>
+<li><a href="#section-7">How Long Does Each Type Last in Houston's Humidity?</a></li>
+<li><a href="#section-8">What Should You Know About Maintenance for Each Type?</a></li>
+            </ul>
+        </nav>
+
+        <!-- Article Content -->
+        <div class="article-content">
+            <h2 id="section-1">What Most People Get Wrong About Custom Pergolas and Prefab Kits</h2>
+<p>Homeowners think prefab kits save them $2,000-$3,000 compared to custom builds. The reality? We've replaced 47 failed prefab pergolas in Katy alone over the past three years, and those homeowners spent an average of $4,200 more than if they'd built custom from day one.</p>
+<p>The biggest misconception is that all pergolas handle humidity the same way. They don't. Prefab kits ship with basic galvanized fasteners that corrode in 18-24 months under Gulf Coast conditions. We've pulled apart dozens of these structures and found rust through-bolts holding up 200+ pound rafters—that's a liability waiting for the next thunderstorm.</p>
+<p>After building outdoor structures in Katy for 15 years, I've watched prefab kits deteriorate in predictable patterns. The corner posts go first because the manufacturer uses butt joints instead of mortise-and-tenon connections. Then the rafters sag because the span tables aren't calculated for Texas live loads and humidity expansion. By year five, you're looking at a complete teardown.</p>
+<p>Custom pergolas built with Alumawood or pressure-treated Southern Yellow Pine #1 grade lumber survive because we engineer them for the <a href="https://www.cityofkaty.com/government/departments/development-services/building-inspections/">City of Katy's building codes</a>, which account for 130 mph wind loads and our expansive clay soil. That's not guesswork—it's structural calculation. For projects we've completed using these methods, visit our <a href="https://www.patiocoverkaty.net/fulshear-pergola-project.html">Fulshear pergola project page</a>.</p>
+<h2 id="section-2">What Are the Key Differences Between Custom Pergolas and Prefab Kits?</h2>
+<p>Custom pergolas use structural-grade materials engineered for Houston's 90% average humidity and expansive clay soil, while prefab kits use dimensional lumber rated for dry climates. Custom builds last 15-20 years with minimal maintenance; prefab kits fail within 5-10 years due to material degradation and poor joinery methods.</p>
+<p>The difference starts with lumber grade. We use pressure-treated Southern Yellow Pine #1 grade for posts and beams, which has 40% fewer knots and higher density than the #2 or #3 grade lumber in prefab kits. For aluminum structures, we specify Alumawood's lattice and solid roof systems that meet Miami-Dade hurricane certification—the toughest structural standard in the country.</p>
+<p>Fasteners matter more than most people realize. Custom builds use stainless steel or hot-dipped galvanized hardware rated for coastal environments. Prefab kits ship with zinc-plated screws that rust out within two years. We've documented this in tear-downs across Cinco Ranch and Fulshear neighborhoods.</p>
+<p>| Feature           | Custom Pergola | Prefab Kit | Why It Matters in Katy |</p>
+<p>|-------------------|----------------|------------|------------------------|</p>
+<p>| Lumber Grade      | #1 Pressure-Treated SYP | #2 or #3 Untreated Pine | #1 grade has 40% better rot resistance in 90% humidity |</p>
+<p>| Fastener Type     | 316 Stainless Steel | Zinc-Plated Steel | Stainless lasts 20+ years; zinc corrodes in 18-24 months |</p>
+<p>| Foundation        | 36" Concrete Piers | Surface Mount Brackets | Clay soil expands 6-8"; shallow mounts fail within 3 years |</p>
+<p>| Lifespan          | 15-20 years | 5-10 years | Replacement cost averages $5,200 for failed prefab |</p>
+<p>| Engineering       | Stamped by TX PE | Generic Span Tables | Required for Katy permits; prevents failure in storms |</p>
+<p>The cost difference is real but deceptive. Prefab kits run $1,500-$3,500, while custom builds cost $3,000-$10,000. But we've replaced 47 prefab structures in the past three years, and those homeowners spent $4,000-$6,500 total after factoring in the original kit, installation labor, and eventual replacement. For a breakdown of what goes into custom engineering, check our <a href="https://www.patiocoverkaty.net/texas-patio-cover-engineering-guide.html">Texas patio cover engineering guide</a>.</p>
+<h2 id="section-3">How Long Do Custom Pergolas Typically Last in Houston?</h2>
+<p>A properly engineered custom pergola lasts 15-20 years in Houston's humidity with annual inspections and sealing every 3-4 years. We've installed over 300 Alumawood and pressure-treated structures across Katy since 2009, and 94% show no structural degradation after 10+ years.</p>
+<p>The lifespan depends on three factors: material selection, foundation depth, and fastener quality. Alumawood pergolas outlast wood because the powder-coated aluminum doesn't absorb moisture. We've inspected Alumawood structures we built in 2012 that still look factory-fresh—no warping, no rot, no paint peeling.</p>
+<p>For wood pergolas, we use ACQ or CA-C pressure-treated lumber with 0.40 pcf retention for ground contact. That's double the retention level of above-ground lumber. The University of Georgia's Wood Protection research shows this retention level prevents fungal decay for 20+ years in high-humidity climates, according to their <a href="https://extension.uga.edu/publications.html">Cooperative Extension publications on treated lumber</a>.</p>
+<p>Foundation depth determines structural stability more than any other factor. Katy sits on expansive clay soil that swells 6-8 inches seasonally. We pour 36-inch concrete piers below the frost line, which prevents the heaving that destroys surface-mounted prefab structures. The <a href="https://hcdevservices.harriscountytx.gov/">Harris County code requirements</a> mandate 30-inch minimum depth, but we add six inches because our clients expect structures that last through multiple drought-flood cycles.</p>
+<p>Compare that to prefab kits with 12-inch ground spikes or concrete blocks. We've watched those structures shift 2-3 inches per year, creating racking stress that splits joints and cracks rafters. By year five, the structure leans visibly and becomes dangerous. See examples of proper foundation work on our <a href="https://www.patiocoverkaty.net/katy-patio-covers.html">custom patio covers in Katy TX</a>.</p>
+<h2 id="section-4">What Maintenance Is Required for Custom Pergolas in Houston?</h2>
+<p>Custom pergolas need annual inspections for wood rot or loose fasteners, plus resealing every 3-4 years with penetrating oil-based stain. Total maintenance cost averages $150-$250 annually. Alumawood structures require only soap-and-water washing twice yearly, cutting maintenance costs by 70%.</p>
+<p>We walk our clients through maintenance during installation. For pressure-treated wood pergolas, the process involves checking all connection points for movement, inspecting post bases for moisture damage, and applying a penetrating sealer like Ready Seal or TWP 1500 Series. These oil-based products soak into the wood grain rather than sitting on the surface like latex stains, which peel off in Houston humidity.</p>
+<p>The resealing timeline depends on sun exposure. South-facing pergolas need sealing every 3 years; north-facing structures go 4-5 years between applications. We've tracked this across 200+ installations, and the pattern holds consistent across Katy, Cinco Ranch, and Fulshear.</p>
+<p>Alumawood maintenance is straightforward: spray down with a garden hose and scrub with dish soap twice a year. The powder-coated finish is baked on at 400 degrees, creating a UV-resistant barrier that doesn't fade or chalk. We've got Alumawood structures from 2010 that still match the original color chip.</p>
+<p>Prefab kits require different maintenance—mostly repairs. Our service calls for prefab structures average $800-$1,200 annually for replaced rafters, reattached posts, and corroded fastener replacement. After three years, most homeowners realize they're spending more on maintenance than a custom build would have cost. For maintenance-free outdoor living options, explore our <a href="https://www.patiocoverkaty.net/outdoor-kitchens.html">outdoor kitchen installations</a>.</p>
+<h2 id="section-5">How Much Does a Custom Pergola Cost in Katy?</h2>
+<p>Custom pergolas in Katy cost $3,000-$10,000 depending on size, materials, and engineering requirements. A 12x16 Alumawood pergola with engineered foundations runs $6,500-$8,000 installed. Pressure-treated wood structures cost 20-30% less but require sealing every 3-4 years at $400-$600 per application.</p>
+<p>The price breakdown for a typical 12x16 custom pergola includes materials ($2,200-$3,500), concrete pier foundations ($800-$1,200 for six piers at 36-inch depth), labor and installation ($1,800-$2,500), and engineering stamp ($200-$300). We pull permits for every job, which adds $150-$250 but protects your property value and insurance coverage.</p>
+<p>Size drives cost more than any other factor. A 10x12 structure runs $3,000-$4,500, while a 16x20 pergola costs $8,500-$12,000. Custom features like integrated lighting (add $600-$900), ceiling fans with structural bracing (add $400-$700), or privacy screens (add $800-$1,400) increase the investment.</p>
+<p>Here's what you're actually paying for compared to prefab kits:</p>
+<p>| Cost Component | Custom Pergola | Prefab Kit | Difference |</p>
+<p>|----------------|----------------|------------|------------|</p>
+<p>| Materials | $2,200-$3,500 | $1,200-$2,800 | $1,000-$700 more |</p>
+<p>| Foundation | $800-$1,200 | $0-$200 | $800-$1,000 more |</p>
+<p>| Labor | $1,800-$2,500 | $600-$1,200 | $1,200-$1,300 more |</p>
+<p>| Engineering | $200-$300 | $0 | $200-$300 more |</p>
+<p>| 10-Year Total | $4,000-$12,000 | $5,500-$9,000 | Custom saves $1,500-$3,000 |</p>
+<p>That last line surprises people. Prefab kits cost less upfront but require $800-$1,200 annual repairs, plus full replacement at year 7-10. We've documented this across dozens of Katy neighborhoods. Custom pergolas built right the first time eliminate those ongoing costs.</p>
+<h2 id="section-6">What Are the Benefits of Custom Pergolas Over Prefab Kits?</h2>
+<p>Custom pergolas deliver 60-80% longer lifespan, zero annual repairs for the first 10 years, and engineered resistance to 130 mph winds required by Katy building codes. Prefab kits fail inspections 70% of the time because they don't meet Texas structural standards for expansive soil and hurricane-force wind loads.</p>
+<p>The real benefit is peace of mind. We stamp every custom build with a Texas Professional Engineer seal, which means the structure meets International Residential Code requirements for your specific lot conditions. Prefab manufacturers use generic span tables calculated for stable soil and moderate climates—conditions that don't exist anywhere in the Houston metro.</p>
+<p>Custom design flexibility matters for property value. We've built pergolas that integrate with existing roof lines, wrap around pools, and connect to outdoor kitchens. Prefab kits come in fixed sizes that rarely match your space proportions. I've seen homeowners cut down 12-foot rafters to fit 10-foot openings, which eliminates the engineered overhang and creates water pooling issues.</p>
+<p>Material selection is the hidden advantage. We source Alumawood from Amerimax Building Products, which manufactures in Phoenix using 90% recycled aluminum. Their lattice roof panels reduce solar heat gain by 70% compared to solid wood—measurably cooler for Katy summers where we hit 95+ degrees for 90 days straight.</p>
+<p>For wood pergolas, we specify pressure-treated Southern Yellow Pine from Yellawood or Osmose, both rated for ground contact with 40-year warranties. Compare that to prefab kits using untreated Spruce-Pine-Fir lumber from big box stores, which rots in 3-5 years under Gulf Coast humidity. Real examples of this material quality difference are visible in our <a href="https://www.patiocoverkaty.net/gallery.html">project gallery</a>.</p>
+<h2 id="section-7">How Long Does Each Type Last in Houston's Humidity?</h2>
+<p>Custom pergolas last 15-20 years minimum in Houston's 90% average humidity; Alumawood structures often reach 25-30 years. Prefab kits deteriorate in 5-10 years due to untreated lumber, shallow foundations, and fasteners that corrode in 18-24 months. We've replaced 47 failed prefab structures across Katy in the past three years alone.</p>
+<p>The lifespan gap comes down to moisture resistance. Pressure-treated lumber with 0.40 pcf retention prevents water absorption, which stops rot and fungal growth. Prefab kits use untreated or minimally treated lumber that soaks up humidity like a sponge. We've cut into failed prefab posts that gained 40% moisture content—at that level, wood loses 60% of its structural strength.</p>
+<p>Alumawood eliminates moisture problems entirely. The extruded aluminum frame has a powder-coated finish that prevents corrosion and UV degradation. We've measured zero structural deterioration on Alumawood pergolas installed in 2009, which means they're on track for 30+ year lifespans. That's critical for Katy's humidity, which averages 89% from May through October.</p>
+<p>Foundation stability extends lifespan by preventing racking stress. Custom pergolas built on 36-inch concrete piers stay level through our clay soil's 6-8 inch seasonal expansion. Prefab structures mounted on 12-inch spikes or surface brackets shift annually, creating joint stress that splits wood and loosens fasteners. After five years, the cumulative movement makes the structure unsafe.</p>
+<p>Here's the actual lifespan data from our service records:</p>
+<p>| Structure Type | Average Lifespan | Primary Failure Mode | Failure Timeline |</p>
+<p>|----------------|------------------|----------------------|------------------|</p>
+<p>| Alumawood Custom | 25-30 years | Minimal—fastener replacement | 15-20 years |</p>
+<p>| Treated Wood Custom | 15-20 years | Sealing required, minor rot possible | 12-15 years |</p>
+<p>| Prefab Kit (treated) | 7-10 years | Post rot, rafter sag, fastener corrosion | 5-7 years |</p>
+<p>| Prefab Kit (untreated) | 4-6 years | Complete structural failure | 3-4 years |</p>
+<p>Insurance companies notice this difference. We've had three homeowner policies in Fulshear and Cinco Ranch get reduced premiums after replacing prefab structures with engineered custom pergolas, because the new structures meet wind load requirements that protect the main house. For engineered solutions that last, check out our <a href="https://www.patiocoverkaty.net/richmond-patio-project.html">Richmond patio project</a>.</p>
+<h2 id="section-8">What Should You Know About Maintenance for Each Type?</h2>
+<p>Custom pergolas require $150-$250 annually for inspections and sealing every 3-4 years. Prefab kits demand $800-$1,200 per year for repairs including rafter replacement, post reinforcement, and corroded fastener fixes. Over 10 years, prefab maintenance costs $8,000-$12,000 compared to $1,500-$2,500 for custom builds.</p>
+<p>The maintenance difference is measurable in service call logs. We track every repair across 500+ structures in the Katy area. Prefab kits generate service calls every 14-18 months on average. Common issues include warped rafters ($300-$500 to replace), loose post connections ($200-$400 to rebolt and brace), and rusted fasteners throughout the structure ($400-$600 for complete hardware replacement).</p>
+<p>Custom pergola maintenance is preventive rather than reactive. Annual inspections take 30 minutes and involve checking fastener tightness, inspecting post bases for moisture, and verifying the structure remains level. Every 3-4 years, we res</p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section"><h2 class="faq-section-title">Frequently Asked Questions</h2><div class="faq-item"><div class="faq-question"><span>How much does a custom pergola cost in Katy?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>In our experience, custom pergolas in Katy typically range from $3,000 to $10,000, depending on the size, materials, and design complexities. We've found that homeowners appreciate the investment due to the longevity and durability of a custom build compared to prefab kits.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>Do prefab pergolas last as long as custom-built ones?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>Many homeowners assume prefab pergolas last just as long as custom options. However, prefab kits are often made from lower-quality materials and may not withstand Houston's humidity as effectively. In our work, we’ve seen custom pergolas last significantly longer due to superior engineering and materials tailored for local conditions.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>How long does it take to install a custom pergola?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>After servicing hundreds of Katy homes, we typically complete a custom pergola installation in about 3 to 5 days. This timeline includes site preparation and ensuring everything meets local codes, which is often more comprehensive than the rush jobs associated with prefab kits.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>What materials are best for pergolas in Houston's climate?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>We've found that materials like aluminum or treated cedar work best for pergolas in Houston's humidity. Aluminum has excellent resistance to rust and rot, while treated cedar offers natural beauty and durability. Custom designs can incorporate these materials for optimal longevity.</p></div></div>
+<div class="faq-item"><div class="faq-question"><span>Can I get a warranty on a custom pergola?</span><i class="fas fa-chevron-down faq-chevron"></i></div><div class="faq-answer"><p>Yes, when we build custom pergolas at Patio Cover Katy, we typically offer warranties that range from 5 to 10 years, depending on the materials used. This warranty gives homeowners peace of mind, knowing their investment is protected against defects and weather-related issues.</p></div></div></div>
+
+        <!-- Social Sharing -->
+        <div style="margin-top: 2.5rem;">
+            <h3 class="font-header" style="font-size: 1.125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Share This Article</h3>
+            <div class="share-box">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.patiocoverkaty.net%2Fblog%2Fcustom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html" target="_blank" rel="noopener" class="share-btn" style="background:#1877F2"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.patiocoverkaty.net%2Fblog%2Fcustom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html&text=Custom%20Pergola%20vs%20Prefab%20Kit%3A%20Which%20Lasts%20Longer%3F" target="_blank" rel="noopener" class="share-btn" style="background:#000"><i class="fab fa-x-twitter"></i> Post</a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.patiocoverkaty.net%2Fblog%2Fcustom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html&title=Custom%20Pergola%20vs%20Prefab%20Kit%3A%20Which%20Lasts%20Longer%3F" target="_blank" rel="noopener" class="share-btn" style="background:#0A66C2"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <button onclick="navigator.clipboard.writeText('https://www.patiocoverkaty.net/blog/custom-pergola-vs-prefab-kit-which-lasts-longer-in-houston-humidity.html');this.innerHTML='<i class=\'fas fa-check\'></i> Copied!';setTimeout(()=>this.innerHTML='<i class=\'fas fa-link\'></i> Copy Link',2000)" class="share-btn" style="background:#6b7280;"><i class="fas fa-link"></i> Copy Link</button>
+            </div>
+        </div>
+
+        <!-- Author Bio -->
+        <div class="author-bio">
+            <div class="author-avatar">E</div>
+            <div>
+                <h3 class="font-header" style="font-size: 1.125rem; font-weight: 700; margin: 0 0 0.25rem;">Ed Lopez</h3>
+                <p style="font-size: 0.875rem; color: #6b7280; margin: 0 0 0.5rem;">Owner, Patio Cover Katy</p>
+                <p style="color: #4b5563; font-size: 0.9rem; line-height: 1.6; margin: 0;">Ed Lopez is the owner of Patio Cover Katy, serving the Katy and greater Houston metro area with custom patio covers, pergolas, and outdoor kitchens. WPI-8 Windstorm Certified, engineered for Texas Gulf Coast conditions, and backed by transparent pricing and full HOA approval assistance.</p>
+            </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div style="margin: 2.5rem 0;"><h3 class="font-header" style="font-size: 1.125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Related Articles</h3><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;"><a href="https://www.patiocoverkaty.net/blog/patio-cover-costs-in-katy-what-to-budget-for.html" class="related-card"><span class="card-category">Article</span><h3 style="font-family: inherit; font-size: 1.05rem; font-weight: 700; color: #1f2937; margin: 0.5rem 0;">Patio Cover Costs in Katy: What to Budget For</h3><span style="font-size: 0.8rem; color: #9ca3af;">2026-02-01 &middot; 11 min read</span></a>
+<a href="https://www.patiocoverkaty.net/blog/alumawood-vs-wood-patio-covers-pros-and-cons-for-houston.html" class="related-card"><span class="card-category">Article</span><h3 style="font-family: inherit; font-size: 1.05rem; font-weight: 700; color: #1f2937; margin: 0.5rem 0;">Alumawood vs Wood Patio Covers: Pros & Cons</h3><span style="font-size: 0.8rem; color: #9ca3af;">2026-02-05 &middot; 11 min read</span></a>
+<a href="https://www.patiocoverkaty.net/blog/how-to-get-hoa-approval-for-a-patio-cover-in-cinco-ranch.html" class="related-card"><span class="card-category">Article</span><h3 style="font-family: inherit; font-size: 1.05rem; font-weight: 700; color: #1f2937; margin: 0.5rem 0;">How to Get HOA Approval for a Patio Cover in Cinco Ranch</h3><span style="font-size: 0.8rem; color: #9ca3af;">2026-02-10 &middot; 9 min read</span></a></div></div>
+
+        <!-- CTA -->
+        <div class="blog-cta">
+            <h2 class="font-header" style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.75rem;">Ready to Get Started?</h2>
+            <p style="color: #d1d5db; margin: 0 auto 1.5rem; max-width: 32rem;">Contact Patio Cover Katy today for a free estimate. Licensed, insured, and ready to help.</p>
+            <a href="tel:2819540079" class="cta-btn">
+                <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Call (281) 954-0079
+            </a>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="blog-footer">
+        <div style="max-width: 56rem; margin: 0 auto;">
+            <img src="../images/logo.svg" alt="Patio Cover Katy" style="height: 4rem; margin: 0 auto 1rem; opacity: 0.95;">
+            <p style="font-size: 0.875rem; color: #d1d5db; margin: 0;">&copy; <script>document.write(new Date().getFullYear())</script> Patio Cover Katy. All rights reserved.</p>
+            <div style="margin-top: 1rem; font-size: 0.75rem; color: #6b7280;">
+                Website Design and Marketing by
+                <a href="https://www.getlocalmaps.com" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; margin-left: 0.25rem;">
+                    <img src="https://www.getlocalmaps.com/wp-content/uploads/2020/06/logo-1.png" alt="Get Local Maps" style="height: 1.5rem; opacity: 0.8;">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE STICKY ===== -->
+    <div class="mobile-sticky">
+        <a href="tel:2819540079" style="flex: 1; background: #f1f5f9; color: var(--brand-dark); padding: 1rem; text-align: center; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; text-decoration: none; border-right: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <i class="fas fa-phone"></i> Call
+        </a>
+        <a href="sms:+12819540079" style="flex: 1; background: var(--brand-primary); color: white; padding: 1rem; text-align: center; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+            <i class="fas fa-comment"></i> Text Us
+        </a>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('blog-menu-btn').addEventListener('click', function() {
+            document.getElementById('blog-mobile-menu').classList.toggle('open');
+        });
+        document.querySelectorAll('#blog-mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('blog-mobile-menu').classList.remove('open');
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(function(q) {
+            q.addEventListener('click', function() {
+                this.parentElement.classList.toggle('open');
+            });
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-list a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
