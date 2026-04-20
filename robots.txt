@@ -1,4 +1,62 @@
+# Patio Cover Katy — robots.txt
+# https://www.patiocoverkaty.net
+
 User-agent: *
 Allow: /
 
+# AI Crawlers — Welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Sitemaps
 Sitemap: https://www.patiocoverkaty.net/sitemap.xml
+
+# AI-Readable Files
+# ai.txt: https://www.patiocoverkaty.net/ai.txt
+# llms.txt: https://www.patiocoverkaty.net/llms.txt
+
+# Per-City AI Files (14 city-specific recommendation files)
+# Index: https://www.patiocoverkaty.net/ai.txt (see "Service Area Pages" section)
+# Pattern: https://www.patiocoverkaty.net/[city]-patio-covers-ai.txt
