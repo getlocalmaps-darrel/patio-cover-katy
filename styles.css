@@ -1400,29 +1400,6 @@ body {
     height: auto;               /* normal image on mobile */
   }
 }
-
-
-/* Stack nicely on mobile */
-@media (max-width: 900px) {
-  .why-choose {
-    grid-template-columns: 1fr;
-    padding: 3.5rem 1.5rem;
-  }
-
-  .why-choose-photo {
-    order: -1;              /* show photo above text on mobile */
-    max-width: 640px;
-    margin: 0 auto 2rem;
-  }
-
-  .why-choose-main {
-    height: auto;           /* let it size itself on small screens */
-  }
-
-  .why-choose-main img {
-    height: auto;
-  }
-}
 /* ===========================
    CONTACT PAGE (restored)
    =========================== */
@@ -1800,4 +1777,176 @@ main li a,
 /* 6. BUTTON PROTECT: Ensure main buttons don't get underlined */
 .btn, .btn-primary {
   text-decoration: none !important;
+}
+
+/* ===========================
+   DROPDOWN NAVIGATION
+   =========================== */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-dropdown-toggle {
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(15,23,42,0.15);
+  min-width: 200px;
+  z-index: 999;
+  padding: 0.5rem 0;
+}
+
+.nav-dropdown-menu--wide {
+  min-width: 220px;
+  columns: 2;
+  column-gap: 0;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 0.55rem 1.1rem;
+  color: #1e293b;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  break-inside: avoid;
+}
+
+.nav-dropdown-menu a:hover {
+  background: #f1f5f9;
+  color: #2979ff;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
+/* ===========================
+   COMPREHENSIVE FOOTER
+   =========================== */
+.site-footer {
+  background: #0f172a;
+  color: #94a3b8;
+  padding: 3.5rem 1.5rem 0;
+  margin-top: 4rem;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.4fr 1fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-logo-img {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  filter: brightness(0) invert(1);
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #94a3b8;
+}
+
+.footer-nap {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.footer-nap a {
+  color: #93c5fd;
+}
+
+.footer-heading {
+  color: #f1f5f9;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul a {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.footer-col ul a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer-bottom p {
+  color: #64748b;
+}
+
+.footer-credit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.footer-credit .footer-logo {
+  height: 1.5rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
 }
